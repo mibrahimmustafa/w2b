@@ -1,0 +1,207 @@
+10:18:10 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+10:18:11 [INFO    ] W2B.__main__: =======================================================
+10:18:11 [INFO    ] W2B.__main__: Phase 1 — Search  |  query='رحلات شرم الشيخ'  pages=2
+10:18:11 [INFO    ] W2B.__main__: =======================================================
+10:18:11 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/14359-رحلات-شرم-الشيخ
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.30day-eg.com/inside_trip/60/شرم-الشيخ-و-دهب/رحلات-باكيدج
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.sharm-tour-eg.com/topics/taxi-sharm
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://sa.wego.com/flights/sa/ssh/cheapest-flights-from-saudi-arabia-to-sharm-el-sheikh
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.saudia.com/ar-sa/عروض-الرحلات-شرم-الشيخ
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/ar/طيران/سافر/ssh-رحلات-طيران-إلي-شرم-الشيخ
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.sa/flights-to/ssh/cheap-flights-to-sharm-el-sheikh-airport.html
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.marotours.com/
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.kayak.sa/flight-routes/Saudi-Arabia-SA0/Sharm-el-Sheikh-Ophira-SSH
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/city/eg/sherm-el-sheikh.ar.html
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.flynas.com/ar/flights-to-sharm-el-sheikh
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-شرم-الشيخ-4-ايام-3-ليالي/
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Day-Tours/Sharm-El-Sheikh
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.ar.sharmwonders.com/
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://yallarehlat.com/Trip-Location/sharm-elshaikh-trips
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://salamatour.com/categories_sharm_elsheikh_tours/sea-tripes-sharm/
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.wizzair.com/ar-ae/cheap-flights-to-sharm-el-sheikh
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.jazeeraairways.com/ar-kw/flights-to-sharm-el-sheikh
+10:18:15 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/ar.GoSharmTours/?locale=ar_AR
+10:18:15 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+10:18:15 [INFO    ] W2B.scraper.exporters: 💾 XML export → scraped_results\search_results.xml  (20 result(s))
+10:18:15 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\search_results.json
+10:18:15 [INFO    ] W2B.__main__: Search results saved → scraped_results  (XML + JSON)
+10:18:15 [INFO    ] W2B.__main__: --skip-scrape flag set. Stopping after Phase 1.
+10:21:52 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+10:21:52 [INFO    ] W2B.__main__: =======================================================
+10:21:52 [INFO    ] W2B.__main__: Phase 1 — Search  |  query='رحلات شرم الشيخ'  pages=2
+10:21:52 [INFO    ] W2B.__main__: =======================================================
+10:21:52 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-شرم-الشيخ-4-ايام-3-ليالي/
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.marotours.com/
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/Hot-Deals/Midyear-Holidays-In-Sharm-El-sheikh
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://trips-4u.net/Egypt-Hotels/Sharm-El-Sheikh-Tours
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://visit.guide/ar/article/sharm-el-sheikh-at-discounted-prices-bottom-trips
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://goexholidays.com/tour/sharm-elshaikh-flights
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://bookingdoor.com/hotels/activities/sharm-el-sheikh-egypt
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://etlaala.com/رحلات-شرم-الشيخ-4-ليالي/
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/14359-رحلات-شرم-الشيخ
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Day-Tours/Sharm-El-Sheikh
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.ar.sharmwonders.com/
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://yallarehlat.com/Trip-Location/sharm-elshaikh-trips
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://salamatour.com/categories_sharm_elsheikh_tours/sea-tripes-sharm/
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.wizzair.com/ar-ae/cheap-flights-to-sharm-el-sheikh
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.jazeeraairways.com/ar-kw/flights-to-sharm-el-sheikh
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/ar.GoSharmTours/?locale=ar_AR
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://aladdin-travels.com/product-category/رحلات-شرم-الشيخ/
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.saudia.com/ar/عروض-الرحلات-شرم-الشيخ
+10:21:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyadeal.com/flights/en/flights-to-sharm-el-sheikh
+10:21:54 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+10:21:54 [INFO    ] W2B.scraper.exporters: 💾 XML export → scraped_results\search_results.xml  (20 result(s))
+10:21:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\search_results.json
+10:21:54 [INFO    ] W2B.__main__: Search results saved → scraped_results  (XML + JSON)
+10:21:54 [INFO    ] W2B.__main__: --skip-scrape flag set. Stopping after Phase 1.
+10:40:49 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+10:40:49 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:41:18 [WARNING ] W2B.scraper.deep_scraper: No items extracted from: https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:42:01 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+10:42:02 [INFO    ] W2B.__main__: =======================================================
+10:42:02 [INFO    ] W2B.__main__: Phase 1 — Search  |  query='رحلات شرم الشيخ'  pages=2
+10:42:02 [INFO    ] W2B.__main__: =======================================================
+10:42:02 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://yallarehlat.com/Trip-Location/sharm-elshaikh-trips
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-شرم-الشيخ-4-ايام-3-ليالي/
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://sa.wego.com/flights/sa/ssh/cheapest-flights-from-saudi-arabia-to-sharm-el-sheikh
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.saudia.com/ar-sa/عروض-الرحلات-شرم-الشيخ
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.sa/flights-to/ssh/cheap-flights-to-sharm-el-sheikh-airport.html
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/ar/طيران/سافر/ssh-رحلات-طيران-إلي-شرم-الشيخ
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.flynas.com/ar/flights-to-sharm-el-sheikh
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/city/eg/sherm-el-sheikh.ar.html
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.kayak.sa/flight-routes/Saudi-Arabia-SA0/Sharm-el-Sheikh-Ophira-SSH
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://goexholidays.com/tour/sharm-elshaikh-flights
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/Sharm-El-Sheikh-Trips
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.marotours.com/tour-category/رحلات-شرم-الشيخ/
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://trips-4u.net/Egypt-Hotels/Sharm-El-Sheikh-Tours?page=3
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://visit.guide/ar/article/sharm-el-sheikh-at-discounted-prices-bottom-trips
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/14359-رحلات-شرم-الشيخ
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Day-Tours/Sharm-El-Sheikh
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.ar.sharmwonders.com/
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://salamatour.com/categories_sharm_elsheikh_tours/sea-tripes-sharm/
+10:42:07 [DEBUG   ] W2B.scraper.search:   + https://www.jazeeraairways.com/ar-kw/flights-to-sharm-el-sheikh
+10:42:07 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+10:42:07 [INFO    ] W2B.scraper.exporters: 💾 XML export → scraped_results\search_results.xml  (20 result(s))
+10:42:07 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\search_results.json
+10:42:07 [INFO    ] W2B.__main__: Search results saved → scraped_results  (XML + JSON)
+10:42:07 [INFO    ] W2B.__main__: --skip-scrape flag set. Stopping after Phase 1.
+10:42:24 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+10:42:25 [INFO    ] W2B.__main__: =======================================================
+10:42:25 [INFO    ] W2B.__main__: Phase 1 — Search  |  query='رحلات شرم الشيخ'  pages=2
+10:42:25 [INFO    ] W2B.__main__: =======================================================
+10:42:25 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/14359-رحلات-شرم-الشيخ
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-شرم-الشيخ-4-ايام-3-ليالي/
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Day-Tours/Sharm-El-Sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.ar.sharmwonders.com/
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://yallarehlat.com/Trip-Location/sharm-elshaikh-trips
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://salamatour.com/categories_sharm_elsheikh_tours/sea-tripes-sharm/
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.jazeeraairways.com/ar-kw/flights-to-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.wizzair.com/ar-ae/cheap-flights-to-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/ar.GoSharmTours/?locale=ar_AR
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://aladdin-travels.com/product-category/رحلات-شرم-الشيخ/
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.saudia.com/ar/عروض-الرحلات-شرم-الشيخ
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.flyadeal.com/flights/en/flights-to-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.flynas.com/en/flights-to-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/en/travel/flights/riyadh-to-sharm-el-sheikh-flights-ruh-ssh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.flynas.com/en/flights-from-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.flynas.com/en/flights-from-riyadh-to-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.tripadvisor.com/Attractions-g297555-Activities-c42-Sharm_El_Sheikh_South_Sinai_Red_Sea_and_Sinai.html
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://eg.wego.com/en/flights-to/ssh/cheap-flights-to-sharm-el-sheikh
+10:42:27 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/city/eg/sherm-el-sheikh.html
+10:42:27 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+10:42:27 [INFO    ] W2B.scraper.exporters: 💾 XML export → scraped_results\search_results.xml  (20 result(s))
+10:42:27 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\search_results.json
+10:42:27 [INFO    ] W2B.__main__: Search results saved → scraped_results  (XML + JSON)
+10:42:27 [INFO    ] W2B.__main__: =======================================================
+10:42:27 [INFO    ] W2B.__main__: Phase 2 — Scrape  |  20 URL(s) queued
+10:42:27 [INFO    ] W2B.__main__: =======================================================
+10:42:27 [INFO    ] W2B.__main__: [1/20] Scraping: https://www.travelyalla.com/ar-eg/packages/14359-رحلات-شرم-الشيخ
+10:42:27 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/packages/14359-رحلات-شرم-الشيخ
+10:43:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شرم الشيخ 2026 وحجز عروض فنادق شرم الشيخ بافضل الاسعار - ترافل يلا' — 15 paragraph(s).
+10:43:42 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.travelyalla.com_ar-eg_packages_14359-رحلات-شرم-الشيخ.json
+10:43:43 [INFO    ] W2B.__main__: [2/20] Scraping: https://agazatmasr.com/tour/رحلات-شرم-الشيخ-4-ايام-3-ليالي/
+10:43:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/tour/رحلات-شرم-الشيخ-4-ايام-3-ليالي/
+10:44:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شرم الشيخ 4 ايام 3 ليالي شاملة الانتقالات – اجازات مصر' — 7 paragraph(s).
+10:44:56 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\agazatmasr.com_tour_رحلات-شرم-الشيخ-4-ايام-3-ليالي_.json
+10:44:57 [INFO    ] W2B.__main__: [3/20] Scraping: https://www.trips-4u.net/Day-Tours/Sharm-El-Sheikh
+10:44:57 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Day-Tours/Sharm-El-Sheikh
+10:46:15 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد شرم الشيخ' — 14 paragraph(s).
+10:46:15 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.trips-4u.net_Day-Tours_Sharm-El-Sheikh.json
+10:46:17 [INFO    ] W2B.__main__: [4/20] Scraping: https://www.ar.sharmwonders.com/
+10:46:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.ar.sharmwonders.com/
+10:47:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شرم الشيخ | أشياء يمكن ممارستها في شرم الشيخ' — 0 paragraph(s).
+10:47:27 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.ar.sharmwonders.com_.json
+10:47:29 [INFO    ] W2B.__main__: [5/20] Scraping: https://yallarehlat.com/Trip-Location/sharm-elshaikh-trips
+10:47:29 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://yallarehlat.com/Trip-Location/sharm-elshaikh-trips
+10:48:36 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شرم الشيخ 2025 | أفضل عروض حجز الفنادق والمنتجعات بأرخص الأسعار | يالا رحلات' — 16 paragraph(s).
+10:48:36 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\yallarehlat.com_Trip-Location_sharm-elshaikh-trips.json
+10:48:37 [INFO    ] W2B.__main__: [6/20] Scraping: https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:48:37 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/hotels/sharm-el-sheikh-trips
+10:49:46 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شرم الشيخ, رحلات شرم الشيخ 2026, عروض رحلات شرم الشيخ, حجز فنادق شرم الشيخ' — 44 paragraph(s).
+10:49:46 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.tripsegypt.net_hotels_sharm-el-sheikh-trips.json
+10:49:47 [INFO    ] W2B.__main__: [7/20] Scraping: https://salamatour.com/categories_sharm_elsheikh_tours/sea-tripes-sharm/
+10:49:47 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://salamatour.com/categories_sharm_elsheikh_tours/sea-tripes-sharm/
+10:50:59 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز رحلات البحرية شرم الشيخ بافضل سعر | سلامه تورز' — 1 paragraph(s).
+10:50:59 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\salamatour.com_categories_sharm_elsheikh_tours_sea-tripes-sharm_.json
+10:51:00 [INFO    ] W2B.__main__: [8/20] Scraping: https://www.jazeeraairways.com/ar-kw/flights-to-sharm-el-sheikh
+10:51:00 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.jazeeraairways.com/ar-kw/flights-to-sharm-el-sheikh
+10:52:20 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز تذاكر طيران إلى شرم الشيخ | طيران الجزيرة الكويت' — 13 paragraph(s).
+10:52:20 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.jazeeraairways.com_ar-kw_flights-to-sharm-el-sheikh.json
+10:52:21 [INFO    ] W2B.__main__: [9/20] Scraping: https://www.wizzair.com/ar-ae/cheap-flights-to-sharm-el-sheikh
+10:52:21 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.wizzair.com/ar-ae/cheap-flights-to-sharm-el-sheikh
+10:53:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات بأرخص الأسعار إلى شرم الشيخ | Wizz Air' — 6 paragraph(s).
+10:53:34 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.wizzair.com_ar-ae_cheap-flights-to-sharm-el-sheikh.json
+10:53:35 [INFO    ] W2B.__main__: [10/20] Scraping: https://www.facebook.com/ar.GoSharmTours/?locale=ar_AR
+10:53:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/ar.GoSharmTours/?locale=ar_AR
+10:54:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Go Sharm Arcadia Tours رحلات شرم الشيخ والغردقة | Cairo  | Facebook' — 0 paragraph(s).
+10:54:42 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.facebook.com_ar.GoSharmTours__locale_ar_AR.json
+10:54:43 [INFO    ] W2B.__main__: [11/20] Scraping: https://aladdin-travels.com/product-category/رحلات-شرم-الشيخ/
+10:54:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://aladdin-travels.com/product-category/رحلات-شرم-الشيخ/
+10:55:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شرم الشيخ Archives - Aladdin Travels' — 1 paragraph(s).
+10:55:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\aladdin-travels.com_product-category_رحلات-شرم-الشيخ_.json
+10:55:55 [INFO    ] W2B.__main__: [12/20] Scraping: https://www.saudia.com/ar/عروض-الرحلات-شرم-الشيخ
+10:55:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.saudia.com/ar/عروض-الرحلات-شرم-الشيخ
+10:57:00 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'احجز رحلات طيران رخيصة من شرم الشيخ (SSH) | طيران السعودية' — 5 paragraph(s).
+10:57:00 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.saudia.com_ar_عروض-الرحلات-شرم-الشيخ.json
+10:57:02 [INFO    ] W2B.__main__: [13/20] Scraping: https://www.flyadeal.com/flights/en/flights-to-sharm-el-sheikh
+10:57:02 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyadeal.com/flights/en/flights-to-sharm-el-sheikh
+10:58:18 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'flyadeal Cheap Flights to Sharm El Sheikh (SSH)' — 2 paragraph(s).
+10:58:18 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.flyadeal.com_flights_en_flights-to-sharm-el-sheikh.json
+10:58:19 [INFO    ] W2B.__main__: [14/20] Scraping: https://www.flynas.com/en/flights-to-sharm-el-sheikh
+10:58:19 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flynas.com/en/flights-to-sharm-el-sheikh
+10:59:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Flights to Sharm El Sheikh SSH from SAR349.00' — 24 paragraph(s).
+10:59:34 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.flynas.com_en_flights-to-sharm-el-sheikh.json
+10:59:36 [INFO    ] W2B.__main__: [15/20] Scraping: https://www.almosafer.com/en/travel/flights/riyadh-to-sharm-el-sheikh-flights-ruh-ssh
+10:59:36 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almosafer.com/en/travel/flights/riyadh-to-sharm-el-sheikh-flights-ruh-ssh
+11:00:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Riyadh to Sharm El Sheikh Flight Ticket Prices | (RUH✈︎SSH) | Almosafer!' — 50 paragraph(s).
+11:00:48 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.almosafer.com_en_travel_flights_riyadh-to-sharm-el-sheikh-flights-ruh-ssh.json
+11:00:49 [INFO    ] W2B.__main__: [16/20] Scraping: https://www.flynas.com/en/flights-from-sharm-el-sheikh
+11:00:49 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flynas.com/en/flights-from-sharm-el-sheikh
+11:02:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Flights from Sharm El Sheikh SSH from SAR369.00' — 9 paragraph(s).
+11:02:06 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.flynas.com_en_flights-from-sharm-el-sheikh.json
+11:02:07 [INFO    ] W2B.__main__: [17/20] Scraping: https://www.flynas.com/en/flights-from-riyadh-to-sharm-el-sheikh
+11:02:07 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flynas.com/en/flights-from-riyadh-to-sharm-el-sheikh
+11:03:19 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Flights from Riyadh to Sharm El Sheikh from SAR329.00' — 9 paragraph(s).
+11:03:19 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.flynas.com_en_flights-from-riyadh-to-sharm-el-sheikh.json
+11:03:20 [INFO    ] W2B.__main__: [18/20] Scraping: https://www.tripadvisor.com/Attractions-g297555-Activities-c42-Sharm_El_Sheikh_South_Sinai_Red_Sea_and_Sinai.html
+11:03:20 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripadvisor.com/Attractions-g297555-Activities-c42-Sharm_El_Sheikh_South_Sinai_Red_Sea_and_Sinai.html
+11:07:33 [WARNING ] W2B.scraper.deep_scraper: No items extracted from: https://www.tripadvisor.com/Attractions-g297555-Activities-c42-Sharm_El_Sheikh_South_Sinai_Red_Sea_and_Sinai.html
+11:07:34 [INFO    ] W2B.__main__: [19/20] Scraping: https://eg.wego.com/en/flights-to/ssh/cheap-flights-to-sharm-el-sheikh
+11:07:34 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://eg.wego.com/en/flights-to/ssh/cheap-flights-to-sharm-el-sheikh
+11:08:49 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flights to Sharm El Sheikh, Egypt - Latest Deals 2026 - eg.wego.com' — 3 paragraph(s).
+11:08:49 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\eg.wego.com_en_flights-to_ssh_cheap-flights-to-sharm-el-sheikh.json
+11:08:51 [INFO    ] W2B.__main__: [20/20] Scraping: https://www.booking.com/flights/destination/city/eg/sherm-el-sheikh.html
+11:08:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.booking.com/flights/destination/city/eg/sherm-el-sheikh.html
+11:09:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Book cheap flights to Sharm El Sheikh (SSH) – Booking.com' — 19 paragraph(s).
+11:09:56 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\www.booking.com_flights_destination_city_eg_sherm-el-sheikh.html.json
+11:09:58 [INFO    ] W2B.__main__: =======================================================
+11:09:58 [INFO    ] W2B.__main__: Done. 19 / 20 page(s) scraped successfully. Output → scraped_results
+11:09:58 [INFO    ] W2B.__main__: =======================================================
