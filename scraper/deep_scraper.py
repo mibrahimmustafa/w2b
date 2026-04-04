@@ -8,6 +8,7 @@ Modified to support batch scraping with concurrency control.
 from __future__ import annotations
 import asyncio
 import re
+import sys
 import traceback
 from typing import Optional, TypedDict, List
 
@@ -64,6 +65,10 @@ class DeepScraper:
         if not urls:
             return []
 
+        # Windows-specific fix for NotImplementedError (ProactorEventLoop required for subprocesses)
+        if sys.platform == 'win32':
+            asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
         # Run the async logic and handle the loop properly
         return asyncio.run(self._run_batch_async(urls))
 
@@ -91,63 +96,59 @@ class DeepScraper:
             logger.info("Excluding Facebook group URL: %s", url)
             return None
 
-        session = None
         try:
-            session = AsyncStealthySession(headless=True, network_idle=True, timeout=60000)
-            response = await session.get(url)
-            
-            if not response:
-                logger.warning("No response for: %s", url)
-                return None
+            async with AsyncStealthySession(headless=True, timeout=60000) as session:
+                response = await session.fetch(url, network_idle=True)
+                
+                if not response:
+                    logger.warning("No response for: %s", url)
+                    return None
 
-            # Extract basic data
-            title = (response.css("title::text").get(default="") or "").strip()
-            description = (response.css("meta[name='description']::attr(content)").get(default="") or "").strip()
+                # Extract basic data
+                title = (response.css("title::text").get(default="") or "").strip()
+                description = (response.css("meta[name='description']::attr(content)").get(default="") or "").strip()
 
-            def _get_clean_text(sel) -> str:
-                return " ".join(t.strip() for t in sel.xpath(".//text()").getall() if t.strip())
+                def _get_clean_text(sel) -> str:
+                    return " ".join(t.strip() for t in sel.xpath(".//text()").getall() if t.strip())
 
-            headings = {
-                "h1": [_get_clean_text(h) for h in response.css("h1") if _get_clean_text(h)],
-                "h2": [_get_clean_text(h) for h in response.css("h2") if _get_clean_text(h)],
-                "h3": [_get_clean_text(h) for h in response.css("h3") if _get_clean_text(h)],
-            }
+                headings = {
+                    "h1": [_get_clean_text(h) for h in response.css("h1") if _get_clean_text(h)],
+                    "h2": [_get_clean_text(h) for h in response.css("h2") if _get_clean_text(h)],
+                    "h3": [_get_clean_text(h) for h in response.css("h3") if _get_clean_text(h)],
+                }
 
-            all_paragraphs = []
-            for p in response.css("p"):
-                p_text = _get_clean_text(p)
-                if len(p_text) >= self._MIN_PARAGRAPH_LEN:
-                    all_paragraphs.append(p_text)
-            
-            unique_paragraphs = list(dict.fromkeys(all_paragraphs))[:self._MAX_PARAGRAPHS]
+                all_paragraphs = []
+                for p in response.css("p"):
+                    p_text = _get_clean_text(p)
+                    if len(p_text) >= self._MIN_PARAGRAPH_LEN:
+                        all_paragraphs.append(p_text)
+                
+                unique_paragraphs = list(dict.fromkeys(all_paragraphs))[:self._MAX_PARAGRAPHS]
 
-            all_links = []
-            for a in response.css("a::attr(href)").getall():
-                link = a.strip()
-                if link and not link.startswith(("javascript:", "mailto:", "tel:", "#")):
-                    if link not in all_links:
-                        all_links.append(link)
+                all_links = []
+                for a in response.css("a::attr(href)").getall():
+                    link = a.strip()
+                    if link and not link.startswith(("javascript:", "mailto:", "tel:", "#")):
+                        if link not in all_links:
+                            all_links.append(link)
 
-            social_data = None
-            if platform:
-                social_data = self._extract_social_data(response, platform)
+                social_data = None
+                if platform:
+                    social_data = self._extract_social_data(response, platform)
 
-            logger.debug("Scraped '%s' — %d paragraph(s).", title or url, len(unique_paragraphs))
-            
-            return {
-                "metadata": {"url": url, "title": title, "description": description},
-                "headings": headings,
-                "paragraphs": unique_paragraphs,
-                "links": all_links[:100],
-                "social_data": social_data,
-            }
+                logger.debug("Scraped '%s' — %d paragraph(s).", title or url, len(unique_paragraphs))
+                
+                return {
+                    "metadata": {"url": url, "title": title, "description": description},
+                    "headings": headings,
+                    "paragraphs": unique_paragraphs,
+                    "links": all_links[:100],
+                    "social_data": social_data,
+                }
 
         except Exception:
             logger.error("Deep-scrape failed for '%s': %s", url, traceback.format_exc())
             return None
-        finally:
-            if session:
-                await session.close()
 
     def _identify_platform(self, url: str) -> Optional[str]:
         low_url = url.lower()

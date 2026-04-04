@@ -20,13 +20,16 @@ Usage (programmatic)::
     run_pipeline(config)
 """
 
-from __future__ import annotations
-
+import sys
+import asyncio
 import argparse
 import re
-import sys
 import time
 from pathlib import Path
+
+if sys.platform == 'win32':
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
 
 from scraper import DeepScraper, ScraperConfig, SearchEngine
 from scraper.exporters import save_json, save_xml

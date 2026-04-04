@@ -1,204 +1,125 @@
-12:32:40 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_لتونة_الجبل_في_المنيا_2026-04-04
-12:32:40 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://ar.wikipedia.org/wiki/تونة_الجبل
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/watch?v=Co8aqZ9_oBg
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://alivoyage.com/ar/tours/رحلة-3-ايام-لزيارة-اثار-المنيا/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.getyourguide.com/ar-eg/minya-l188087/private-tours-tc221/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://tourismdailynews.com/2024/11/27/من-عاصمة-إخناتون-لتونة-الجبل-رحلة-أدبا/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.masrawy.com/news/news_regions/details/2024/11/1/2667832/تقديم-خدمة-الحجز-الإلكتروني-لزيارة-المناطق-الأثرية-في-المنيا
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.egypttourpackages.com/ar/travel-blog/المنيا
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/ellminya/posts/المكان-دة-موجود-عندنا-في-المنيا-اسمه-هرموبولس-ماجنا-في-قرية-تونه-الجبل-مركز-ملوى/1115427356621782/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.youm7.com/story/2024/5/17/بينها-الاشمونين-وتونا-الجبل-والبهنسا-ودير-جبل-الطير-6-مناطق/6576892
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-المنيا-من-القاهرة.php
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://hurghadalovers.com/ar/tuna-al-jabal-egypt/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.elwatannews.com/news/details/6299515
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.vetogate.com/4395016
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.dostor.org/4876815
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.almasryalyoum.com/news/details/3006200
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://gomhoreagadeda.com/ارض-البعث-الأبدي-تونا-الجبل/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.youm7.com/story/2024/10/8/تونا-الجبل-أكبر-منطقة-أثرية-بالمنيا-تضم-مقابر-للطيور-تعرف/6732635
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.elaosboa.com/470800/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://lite.almasryalyoum.com/main/279683/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.youm7.com/story/2024/5/30/كل-ما-تريد-معرفته-عن-سراديب-تونا-الجبل-ومن-الآدمى/6583010
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.marefa.org/تونة_الجبل،_ملوي
-12:32:44 [DEBUG   ] W2B.scraper.search:   + http://www.minia.gov.eg/New_Tourism/default.aspx
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.youm7.com/story/2024/11/1/حكايات-تونا-الجبل-لا-تنتهى-قبلة-السائحين-ومزار-أهل-المنيا/6752465
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.youm7.com/story/2021/5/15/تونا-الجبل-بملوى-اختارها-المصريون-القدماء-لتكون-أرض-البعث-الأبدى/5319220
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.aldawlanews.com/1093431
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://m.akhbarelyom.com/news/newdetails/4510182/1/حكايات-سراديب-تونا-الجبل-رحلة-إلى-عالم-ا
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.elwatannews.com/news/details/7377664
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://elmahrousanews.com/124747/
-12:32:44 [DEBUG   ] W2B.scraper.search:   + https://www.google.com/travel/flights/flights-from-el-menia.html?gl=US&hl=en-US
-12:32:44 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 29.
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://ar.wikipedia.org/wiki/تونة_الجبل
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://ar.wikipedia.org/wiki/تونة_الجبل': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youtube.com/watch?v=Co8aqZ9_oBg
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youtube.com/watch?v=Co8aqZ9_oBg': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alivoyage.com/ar/tours/رحلة-3-ايام-لزيارة-اثار-المنيا/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://alivoyage.com/ar/tours/رحلة-3-ايام-لزيارة-اثار-المنيا/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.getyourguide.com/ar-eg/minya-l188087/private-tours-tc221/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.getyourguide.com/ar-eg/minya-l188087/private-tours-tc221/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://tourismdailynews.com/2024/11/27/من-عاصمة-إخناتون-لتونة-الجبل-رحلة-أدبا/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://tourismdailynews.com/2024/11/27/من-عاصمة-إخناتون-لتونة-الجبل-رحلة-أدبا/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.masrawy.com/news/news_regions/details/2024/11/1/2667832/تقديم-خدمة-الحجز-الإلكتروني-لزيارة-المناطق-الأثرية-في-المنيا
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.masrawy.com/news/news_regions/details/2024/11/1/2667832/تقديم-خدمة-الحجز-الإلكتروني-لزيارة-المناطق-الأثرية-في-المنيا': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egypttourpackages.com/ar/travel-blog/المنيا
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.egypttourpackages.com/ar/travel-blog/المنيا': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/ellminya/posts/المكان-دة-موجود-عندنا-في-المنيا-اسمه-هرموبولس-ماجنا-في-قرية-تونه-الجبل-مركز-ملوى/1115427356621782/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.facebook.com/ellminya/posts/المكان-دة-موجود-عندنا-في-المنيا-اسمه-هرموبولس-ماجنا-في-قرية-تونه-الجبل-مركز-ملوى/1115427356621782/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youm7.com/story/2024/5/17/بينها-الاشمونين-وتونا-الجبل-والبهنسا-ودير-جبل-الطير-6-مناطق/6576892
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youm7.com/story/2024/5/17/بينها-الاشمونين-وتونا-الجبل-والبهنسا-ودير-جبل-الطير-6-مناطق/6576892': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-المنيا-من-القاهرة.php
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-المنيا-من-القاهرة.php': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://hurghadalovers.com/ar/tuna-al-jabal-egypt/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://hurghadalovers.com/ar/tuna-al-jabal-egypt/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.elwatannews.com/news/details/6299515
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.elwatannews.com/news/details/6299515': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.vetogate.com/4395016
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.vetogate.com/4395016': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.dostor.org/4876815
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.dostor.org/4876815': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almasryalyoum.com/news/details/3006200
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.almasryalyoum.com/news/details/3006200': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://gomhoreagadeda.com/ارض-البعث-الأبدي-تونا-الجبل/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://gomhoreagadeda.com/ارض-البعث-الأبدي-تونا-الجبل/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youm7.com/story/2024/10/8/تونا-الجبل-أكبر-منطقة-أثرية-بالمنيا-تضم-مقابر-للطيور-تعرف/6732635
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youm7.com/story/2024/10/8/تونا-الجبل-أكبر-منطقة-أثرية-بالمنيا-تضم-مقابر-للطيور-تعرف/6732635': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.elaosboa.com/470800/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.elaosboa.com/470800/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://lite.almasryalyoum.com/main/279683/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://lite.almasryalyoum.com/main/279683/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youm7.com/story/2024/5/30/كل-ما-تريد-معرفته-عن-سراديب-تونا-الجبل-ومن-الآدمى/6583010
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youm7.com/story/2024/5/30/كل-ما-تريد-معرفته-عن-سراديب-تونا-الجبل-ومن-الآدمى/6583010': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marefa.org/تونة_الجبل،_ملوي
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.marefa.org/تونة_الجبل،_ملوي': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: http://www.minia.gov.eg/New_Tourism/default.aspx
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'http://www.minia.gov.eg/New_Tourism/default.aspx': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youm7.com/story/2024/11/1/حكايات-تونا-الجبل-لا-تنتهى-قبلة-السائحين-ومزار-أهل-المنيا/6752465
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youm7.com/story/2024/11/1/حكايات-تونا-الجبل-لا-تنتهى-قبلة-السائحين-ومزار-أهل-المنيا/6752465': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youm7.com/story/2021/5/15/تونا-الجبل-بملوى-اختارها-المصريون-القدماء-لتكون-أرض-البعث-الأبدى/5319220
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youm7.com/story/2021/5/15/تونا-الجبل-بملوى-اختارها-المصريون-القدماء-لتكون-أرض-البعث-الأبدى/5319220': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.aldawlanews.com/1093431
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.aldawlanews.com/1093431': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://m.akhbarelyom.com/news/newdetails/4510182/1/حكايات-سراديب-تونا-الجبل-رحلة-إلى-عالم-ا
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://m.akhbarelyom.com/news/newdetails/4510182/1/حكايات-سراديب-تونا-الجبل-رحلة-إلى-عالم-ا': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.elwatannews.com/news/details/7377664
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.elwatannews.com/news/details/7377664': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmahrousanews.com/124747/
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://elmahrousanews.com/124747/': 
-12:32:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.google.com/travel/flights/flights-from-el-menia.html?gl=US&hl=en-US
-12:32:44 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.google.com/travel/flights/flights-from-el-menia.html?gl=US&hl=en-US': 
-14:07:00 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:07:01 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%A9_%D8%A7%D9%84%D8%AC%D8%A8%D9%84
-14:08:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'تونة الجبل - ويكيبيديا' — 6 paragraph(s).
-14:08:16 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:26:39 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:26:41 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:27:16 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_لأسوان_2026-04-04
-14:27:16 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.tiktok.com/@empire.travel74/video/7569248785797303560
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://sa.wego.com/flights/sa/asw/cheapest-flights-from-saudi-arabia-to-aswan
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.sa/routes/ruh/asw/riyadh-to-aswan.html
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://sa.trip.com/flights/to-aswan/airfares-asw/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/ar/طيران/سافر/ruh-asw-رحلات-طيران-من-الرياض-إلى-اسوان
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://rahlatk.com/اسعار-وعروض-رحلات-الاقصر-واسوان/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/nile-cruises-luxor-aswan-tours
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.kiwi.com/ar/cheap-flights/riyadh-saudi-arabia/aswan-egypt/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.elbalad.news/6923815
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/to-region/eg/aswan.ar.html
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/watch?v=Z49Spb5SSgc
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.cairo360.com/ar/article/معالم-وسياحة/دليلك-من-القاهرة-لأسوان/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.saudia.com/ar-SA
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://sa.trip.com/guide/airline-tickets/حجز-طيران-رخيص-لمصر.html
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.rehlat.com/ar/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://booking.flynas.com/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://sonsofegypt.net/رحلة-نيلية-من-القاهرة-لاسوان/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://go-bus.com/
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://www.elwatannews.com/news/details/3735487
-14:27:17 [DEBUG   ] W2B.scraper.search:   + https://allnilecruise.com/2021/03/25/الباخرة-آتون-النيل-رحلة-من-الاقصر-أسون/
-14:27:17 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tiktok.com/@empire.travel74/video/7569248785797303560
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.tiktok.com/@empire.travel74/video/7569248785797303560': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.wego.com/flights/sa/asw/cheapest-flights-from-saudi-arabia-to-aswan
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://sa.wego.com/flights/sa/asw/cheapest-flights-from-saudi-arabia-to-aswan': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyscanner.com.sa/routes/ruh/asw/riyadh-to-aswan.html
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.skyscanner.com.sa/routes/ruh/asw/riyadh-to-aswan.html': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.trip.com/flights/to-aswan/airfares-asw/
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://sa.trip.com/flights/to-aswan/airfares-asw/': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almosafer.com/ar/طيران/سافر/ruh-asw-رحلات-طيران-من-الرياض-إلى-اسوان
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.almosafer.com/ar/طيران/سافر/ruh-asw-رحلات-طيران-من-الرياض-إلى-اسوان': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://rahlatk.com/اسعار-وعروض-رحلات-الاقصر-واسوان/
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://rahlatk.com/اسعار-وعروض-رحلات-الاقصر-واسوان/': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/hotels/nile-cruises-luxor-aswan-tours
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.tripsegypt.net/hotels/nile-cruises-luxor-aswan-tours': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.kiwi.com/ar/cheap-flights/riyadh-saudi-arabia/aswan-egypt/
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.kiwi.com/ar/cheap-flights/riyadh-saudi-arabia/aswan-egypt/': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.elbalad.news/6923815
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.elbalad.news/6923815': 
-14:27:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.booking.com/flights/destination/to-region/eg/aswan.ar.html
-14:27:17 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.booking.com/flights/destination/to-region/eg/aswan.ar.html': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youtube.com/watch?v=Z49Spb5SSgc
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.youtube.com/watch?v=Z49Spb5SSgc': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.cairo360.com/ar/article/معالم-وسياحة/دليلك-من-القاهرة-لأسوان/
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.cairo360.com/ar/article/معالم-وسياحة/دليلك-من-القاهرة-لأسوان/': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.saudia.com/ar-SA
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.saudia.com/ar-SA': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.trip.com/guide/airline-tickets/حجز-طيران-رخيص-لمصر.html
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://sa.trip.com/guide/airline-tickets/حجز-طيران-رخيص-لمصر.html': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.rehlat.com/ar/
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.rehlat.com/ar/': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://booking.flynas.com/
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://booking.flynas.com/': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sonsofegypt.net/رحلة-نيلية-من-القاهرة-لاسوان/
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://sonsofegypt.net/رحلة-نيلية-من-القاهرة-لاسوان/': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://go-bus.com/
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://go-bus.com/': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.elwatannews.com/news/details/3735487
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://www.elwatannews.com/news/details/3735487': 
-14:27:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://allnilecruise.com/2021/03/25/الباخرة-آتون-النيل-رحلة-من-الاقصر-أسون/
-14:27:18 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://allnilecruise.com/2021/03/25/الباخرة-آتون-النيل-رحلة-من-الاقصر-أسون/': 
-14:27:19 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:43:37 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:43:38 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://example.com
-14:44:40 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Example Domain' — 1 paragraph(s).
-14:49:24 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:49:35 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:49:43 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:53:47 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:53:47 [INFO    ] W2B.__main__: =======================================================
-14:53:47 [INFO    ] W2B.__main__: Phase 1 — Search  |  query='اسوان'  pages=1
-14:53:47 [INFO    ] W2B.__main__: =======================================================
-14:53:47 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://ar.wikipedia.org/wiki/أسوان
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://en.wikipedia.org/wiki/أسوان
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://en.wikipedia.org/wiki/Aswan
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/aswan.gov.eg/
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://aswanopalhotel.com/دليل-سياحي-شامل-لأسوان-أفضل-10-أماكن-للز/
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://www.instagram.com/aswan_egypt_ph/?hl=en
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/channel/UCKSgUrqOFKXt3yHMDicjmNg
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://sonosoul.gov.eg/
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://sis.gov.eg/ar/مصر/السياحة/أهم-المدن-والمواقع-السياحية/أسوان/
-14:53:51 [DEBUG   ] W2B.scraper.search:   + https://aswan.gov.eg/
-14:53:51 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 10.
-14:53:51 [INFO    ] W2B.scraper.exporters: 💾 XML export → scraped_results\اسوان_2026-04-04\search_results.xml  (10 result(s))
-14:53:51 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسوان_2026-04-04\search_results.json
-14:53:51 [INFO    ] W2B.__main__: Search results saved → scraped_results\اسوان_2026-04-04  (XML + JSON)
-14:53:51 [INFO    ] W2B.__main__: =======================================================
-14:53:51 [INFO    ] W2B.__main__: Phase 2 — Scrape  |  10 URL(s) queued
-14:53:51 [INFO    ] W2B.__main__: =======================================================
-14:53:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape batch of 10 URL(s)
-14:56:23 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:56:35 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-14:59:17 [DEBUG   ] W2B.scraper.deep_scraper: Batch complete — 5 result(s) yielded.
-14:59:17 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسوان_2026-04-04\ar.wikipedia.org_wiki__D8_A3_D8_B3_D9_88_D8_A7_D9_86.json
-14:59:17 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسوان_2026-04-04\en.wikipedia.org_wiki_Aswan.json
-14:59:17 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسوان_2026-04-04\aswanopalhotel.com__D8_AF_D9_84_D9_8A_D9_84-_D8_B3_D9_8A_D8_A7_D8_AD_D9_8A-_D8_B4_D8_A7_D9_85_D9_84-_D9_84_D8_A3_D8_B3_D.json
-14:59:17 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسوان_2026-04-04\www.youtube.com_channel_UCKSgUrqOFKXt3yHMDicjmNg.json
-14:59:17 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسوان_2026-04-04\sis.gov.eg_ar__D9_85_D8_B5_D8_B1__D8_A7_D9_84_D8_B3_D9_8A_D8_A7_D8_AD_D8_A9__D8_A3_D9_87_D9_85-_D8_A7_D9_84_D9_85_D8_AF_.json
-14:59:17 [INFO    ] W2B.__main__: =======================================================
-14:59:17 [INFO    ] W2B.__main__: Done. 5 / 10 page(s) scraped successfully. Output → scraped_results\اسوان_2026-04-04
-14:59:17 [INFO    ] W2B.__main__: =======================================================
-15:02:01 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-15:03:13 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-15:03:24 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-15:03:25 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+20:48:23 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+20:48:24 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+20:48:43 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_لأسوان_2026-04-04
+20:48:43 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://sa.wego.com/flights/sa/asw/cheapest-flights-from-saudi-arabia-to-aswan
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.sa/flights-to/asw/cheap-flights-to-aswan-airport.html
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://sa.trip.com/flights/to-aswan/airfares-asw/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.elbalad.news/6923815
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/city/eg/aswan.ar.html
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/Aswan-Trips
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/watch?v=lgxWUIwKPcg
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.tiktok.com/@empire.travel74/video/7569248785797303560
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/nile-cruises-luxor-aswan-tours
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/954-رحلات-الأقصر-وأسوان
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels/Luxor-Aswan-Nile-Cruise-Tours
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://goexholidays.com/tour/semiramis-nilecruise
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://cassiusstours.com/category/رحلات-الأقصر-وأسوان/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-الاقصر-واسوان-سونستا-مون-نايل-كر/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://voyages-egypte5.com/برنامج-القاهرة-أسوان-الأقصر-(8-أيام-/-7-ليالي)
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/nile-cruise
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-الاقصر-واسوان-الجميلة-نايل-كروز/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Aswan-Trips&city=2007
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.cairo360.com/ar/article/معالم-وسياحة/دليلك-من-القاهرة-لأسوان/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/رحله-نيلية-لمدة-أربعة-أيام-من-القاهرة.php
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.google.com/travel/flights/flights-to-aswan.html?gl=US&hl=en-US
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-اسوان/رحلات-اسوان.php
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/flights/jeddah-to-aswan-flights-jed-asw
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.tripadvisor.com/Attractions-g294204-Activities-c42-Aswan_Aswan_Governorate_Nile_River_Valley.html
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://eg.wego.com/en/flights-to/asw/cheap-flights-to-aswan
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/ar/طيران/سافر/asw-رحلات-طيران-إلي-اسوان
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/دليل-رحلات-اسوان/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://sa.trip.com/guide/airline-tickets/حجز-طيران-رخيص-لمصر.html
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://www.rehlat.com/ar/
+20:48:48 [DEBUG   ] W2B.scraper.search:   + https://booking.flynas.com/
+20:48:48 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 30.
+20:48:48 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.wego.com/flights/sa/asw/cheapest-flights-from-saudi-arabia-to-aswan
+20:48:48 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyscanner.com.sa/flights-to/asw/cheap-flights-to-aswan-airport.html
+20:48:48 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.trip.com/flights/to-aswan/airfares-asw/
+20:50:01 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات طيران رخيصة من السعودية إلى أسوان ابتداء من SAR1,030 بتاريخ 2026 و 2027 | sa.wego.com' — 2 paragraph(s).
+20:50:04 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.elbalad.news/6923815
+20:50:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز تذاكر طيران أسوان (ASW) - رحلات طيران رخيصة أسوان SAR 400 | Trip.com' — 3 paragraph(s).
+20:50:06 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.booking.com/flights/destination/city/eg/aswan.ar.html
+20:50:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flights to Aswan | Skyscanner' — 6 paragraph(s).
+20:50:09 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt/Aswan-Trips
+20:51:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أسوان مقصد السائحين.. أسعار الرحلات النيلية اليوم السبت 4-4-2026' — 8 paragraph(s).
+20:51:09 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youtube.com/watch?v=lgxWUIwKPcg
+20:51:12 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'احجز رحلات طيران رخيصة إلى أسوان (ASW) - Booking.com' — 16 paragraph(s).
+20:51:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tiktok.com/@empire.travel74/video/7569248785797303560
+20:51:17 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 15 paragraph(s).
+20:51:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/hotels/nile-cruises-luxor-aswan-tours
+20:52:16 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاقصر وأسوان  للتواصل  01102540888 - 01102522208 #نيلان_للسياحة... | TikTok' — 1 paragraph(s).
+20:52:17 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'موشن جرافيك مصر - اعلان رحلات لاسوان - YouTube' — 0 paragraph(s).
+20:52:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/packages/954-رحلات-الأقصر-وأسوان
+20:52:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Egypt-Hotels/Luxor-Aswan-Nile-Cruise-Tours
+20:52:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاقصر واسوان | رحلات الاقصر واسوان 2026| رحلات نايل كروز الاقصر واسوان | عروض الاقصر واسوان 2026' — 9 paragraph(s).
+20:52:31 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://goexholidays.com/tour/semiramis-nilecruise
+20:53:29 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاقصر وأسوان نايل كروز, حجز رحلات الاقصر واسوان, افضل نايل كروز 2026\2025' — 14 paragraph(s).
+20:53:29 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://cassiusstours.com/category/رحلات-الأقصر-وأسوان/
+20:53:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الأقصر وأسوان نايل كروز 2026 وعروض حجز الفنادق بافضل الاسعار - ترافل يلا' — 19 paragraph(s).
+20:53:32 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/tour/رحلات-الاقصر-واسوان-سونستا-مون-نايل-كر/
+20:53:44 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أكتشف رحلات النايل كروز الأقصر الي أسوان: أحجز النايل كروز سميراميس لمدة 5 أيام بأفضل الأسعار - مصر' — 12 paragraph(s).
+20:53:45 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://voyages-egypte5.com/برنامج-القاهرة-أسوان-الأقصر-(8-أيام-/-7-ليالي)
+20:54:43 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاقصر واسوان – سونستا مون نايل كروز – اجازات مصر' — 10 paragraph(s).
+20:54:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/nile-cruise
+20:54:45 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الأقصر وأسوان مع كاسيوس تورز | Cassiuss Tours – بأسعار مناسبة' — 36 paragraph(s).
+20:54:45 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/tour/رحلات-الاقصر-واسوان-الجميلة-نايل-كروز/
+20:54:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الي مصر| رحلات الكروز 8 أيام| الأقصر وأسوان' — 6 paragraph(s).
+20:54:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Aswan-Trips&city=2007
+20:55:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 50 paragraph(s).
+20:55:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.cairo360.com/ar/article/معالم-وسياحة/دليلك-من-القاهرة-لأسوان/
+20:55:55 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاقصر واسوان -الجميلة نايل كروز – اجازات مصر' — 9 paragraph(s).
+20:55:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/رحله-نيلية-لمدة-أربعة-أيام-من-القاهرة.php
+20:56:02 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض اسوان | رحلات اسوان  - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 9 paragraph(s).
+20:56:06 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.google.com/travel/flights/flights-to-aswan.html?gl=US&hl=en-US
+20:57:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'دليلك من القاهرة لأسوان! – دليل كايرو 360 للقاهرة، مصر' — 10 paragraph(s).
+20:57:06 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/رحلات-اسوان/رحلات-اسوان.php
+20:57:07 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلة نيلية لمدة 4 أيام من القاهرة الى اسوان و الاقصر | نايل كروز من القاهرة  الى اسوان و الاقصر | باقات الرحلات النيلية من القاهرة' — 7 paragraph(s).
+20:57:08 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/en/travel/flights/jeddah-to-aswan-flights-jed-asw
+20:57:13 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Find Cheap Flights to Aswan - Google Flights' — 2 paragraph(s).
+20:57:14 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripadvisor.com/Attractions-g294204-Activities-c42-Aswan_Aswan_Governorate_Nile_River_Valley.html
+20:58:12 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اسوان | جولات اسوان | رحلات اليوم الواحد من أسوان' — 2 paragraph(s).
+20:58:13 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://eg.wego.com/en/flights-to/asw/cheap-flights-to-aswan
+20:58:19 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'tripadvisor.com' — 0 paragraph(s).
+20:58:21 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/ar/طيران/سافر/asw-رحلات-طيران-إلي-اسوان
+20:58:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Jeddah to Aswan Flight Ticket Prices | (JED✈︎ASW) | Almosafer!' — 50 paragraph(s).
+20:58:30 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/دليل-رحلات-اسوان/
+20:59:18 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flights to Aswan, Egypt - Latest Deals 2026 - eg.wego.com' — 2 paragraph(s).
+20:59:19 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.trip.com/guide/airline-tickets/حجز-طيران-رخيص-لمصر.html
+20:59:39 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز تذاكر طيران - أرخص طيران إلى اسوان| المسافر' — 50 paragraph(s).
+20:59:39 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.rehlat.com/ar/
+20:59:43 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'دليلك الشامل للسفر والسياحة في اسوان 2025 – اجازات مصر' — 50 paragraph(s).
+20:59:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://booking.flynas.com/
+21:00:31 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Trip.com | ✈️ شركات الطيران الاقتصادي من السعودية إلى مصر' — 15 paragraph(s).
+21:00:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات | أفضل موقع حجز طيران وفنادق | حجز أرخص تذاكر طيران' — 24 paragraph(s).
+21:00:57 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'flynas | Book a Flight at Low Cost with the award winning Saudi Airline' — 8 paragraph(s).
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\sa.wego.com_flights_sa_asw_cheapest-flights-from-saudi-arabia-to-aswan.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.skyscanner.com.sa_flights-to_asw_cheap-flights-to-aswan-airport.html.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\sa.trip.com_flights_to-aswan_airfares-asw_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.elbalad.news_6923815.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.booking.com_flights_destination_city_eg_aswan.ar.html.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.flyingcarpetholidays.com_trips-to-egypt_Aswan-Trips.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.youtube.com_watch_v_lgxWUIwKPcg.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.tiktok.com__empire.travel74_video_7569248785797303560.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.tripsegypt.net_hotels_nile-cruises-luxor-aswan-tours.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.travelyalla.com_ar-eg_packages_954-رحلات-الأقصر-وأسوان.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.trips-4u.net_Egypt-Hotels_Luxor-Aswan-Nile-Cruise-Tours.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\goexholidays.com_tour_semiramis-nilecruise.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\cassiusstours.com_category_رحلات-الأقصر-وأسوان_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\agazatmasr.com_tour_رحلات-الاقصر-واسوان-سونستا-مون-نايل-كر_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\voyages-egypte5.com_برنامج-القاهرة-أسوان-الأقصر-_8-أيام-_-7-ليالي_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.flyingcarpetholidays.com_nile-cruise.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\agazatmasr.com_tour_رحلات-الاقصر-واسوان-الجميلة-نايل-كروز_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\skyegtours.com_eg_ar_Aswan-Trips_city_2007.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.cairo360.com_ar_article_معالم-وسياحة_دليلك-من-القاهرة-لأسوان_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.marsaalamtours.com_ar_رحلات-سياحية-في-القاهرة_رحله-نيلية-لمدة-أربعة-أيام-من-القاهرة.php.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.google.com_travel_flights_flights-to-aswan.html_gl_US_hl_en-US.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.marsaalamtours.com_ar_رحلات-اسوان_رحلات-اسوان.php.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\global.almosafer.com_en_travel_flights_jeddah-to-aswan-flights-jed-asw.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.tripadvisor.com_Attractions-g294204-Activities-c42-Aswan_Aswan_Governorate_Nile_River_Valley.htm.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\eg.wego.com_en_flights-to_asw_cheap-flights-to-aswan.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\global.almosafer.com_ar_طيران_سافر_asw-رحلات-طيران-إلي-اسوان.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\agazatmasr.com_دليل-رحلات-اسوان_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\sa.trip.com_guide_airline-tickets_حجز-طيران-رخيص-لمصر.html.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\www.rehlat.com_ar_.json
+21:00:58 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_لأسوان_2026-04-04\booking.flynas.com_.json
