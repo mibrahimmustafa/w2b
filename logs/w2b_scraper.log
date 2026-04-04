@@ -1,1 +1,69 @@
 
+21:26:12 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+21:26:14 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+21:45:41 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/alexandria-trips
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://travelyalla.com/ar-eg/packages/42364-رحلات-الإسكندرية
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels/Alexandria-Tours
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/رحلة-الإسكندرية-من-القاهرة-رحلات/
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/1854140598066338/
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-الإسكندرية-من-القاهرة.php
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://alrahaftours.com/en/tours/alex-dayuse/
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/en/travel/flights/flights-to-alexandria-hbe
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/flights/flights-from-alexandria-hbe
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.wizzair.com/ar-ae/cheap-flights-to-alexandria
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://flights.airarabia.com/en/flights-to-alexandria
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.tripadvisor.com/Attractions-g295398-Activities-c42-Alexandria_Alexandria_Governorate.html
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/179403447436589/
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://eg.wego.com/en/schedules/hbe/alexandria-321-flight-schedules
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-الاسكندريه/رحلات-الاسكندريه.php
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.ootlah.com/ar/attractions-EGaxghbe-oth3230-one-day-trip-to-alexandria.html
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/city/eg/alexandria.html
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://elgzeratours.com/رحلة-يوم-واحد-إلي-الإسكندرية/
+21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.wego.com/flights/sa/hbe/cheapest-flights-from-saudi-arabia-to-alexandria-321
+21:45:44 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+21:46:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
+21:48:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 23 paragraph(s).
+21:55:20 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_الاسكندرية_2026-04-04
+21:55:20 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/alexandria-trips
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://travelyalla.com/ar-eg/packages/42364-رحلات-الإسكندرية
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels/Alexandria-Tours
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/رحلة-الإسكندرية-من-القاهرة-رحلات/
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/1854140598066338/
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-الإسكندرية-من-القاهرة.php
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://alrahaftours.com/en/tours/alex-dayuse/
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/en/travel/flights/flights-to-alexandria-hbe
+21:55:22 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/flights/flights-from-alexandria-hbe
+21:55:22 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 10.
+21:55:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
+21:55:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/hotels/alexandria-trips
+21:55:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://travelyalla.com/ar-eg/packages/42364-رحلات-الإسكندرية
+21:56:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاسكندرية | رحلات الاسكندرية 2026 | رحلات الى الاسكندرية | حجز فنادق الاسكندرية' — 3 paragraph(s).
+21:56:30 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Egypt-Hotels/Alexandria-Tours
+21:56:31 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 23 paragraph(s).
+21:56:31 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmamsha.com/رحلة-الإسكندرية-من-القاهرة-رحلات/
+21:56:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض رحلات الإسكندرية وحجز الفنادق بافضل الاسعار - ترافل يلا' — 6 paragraph(s).
+21:56:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/groups/1854140598066338/
+21:56:35 [INFO    ] W2B.scraper.deep_scraper: Excluding Facebook group URL: https://www.facebook.com/groups/1854140598066338/
+21:56:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-الإسكندرية-من-القاهرة.php
+21:57:40 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاسكندرية - حجز فنادق و رحلات الاسكندرية 2025 (أفضل عروض الاسكندرية)' — 21 paragraph(s).
+21:57:40 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alrahaftours.com/en/tours/alex-dayuse/
+21:57:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلة الإسكندرية من القاهرة ضمن رحلات الإسكندرية ورحلات اليوم الواحد | الممشى لعروض السياحة والرحلات' — 3 paragraph(s).
+21:57:42 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almosafer.com/en/travel/flights/flights-to-alexandria-hbe
+21:57:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاسكندرية من القاهرة | رحلات إلى الإسكندرية من القاهرة' — 3 paragraph(s).
+21:57:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/en/travel/flights/flights-from-alexandria-hbe
+21:58:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلة الاسكندرية – الرهف للسياحة' — 5 paragraph(s).
+21:58:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Book Cheap Flights From Alexandria (HBE) ✈︎ Almosafer' — 50 paragraph(s).
+21:58:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flights to Alexandria ✈︎ (HBE), Egypt | Almosafer' — 50 paragraph(s).
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.flyingcarpetholidays.com_trips-to-egypt_Alexandria-Trips.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.tripsegypt.net_hotels_alexandria-trips.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\travelyalla.com_ar-eg_packages_42364-رحلات-الإسكندرية.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.trips-4u.net_Egypt-Hotels_Alexandria-Tours.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\elmamsha.com_رحلة-الإسكندرية-من-القاهرة-رحلات_.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.marsaalamtours.com_ar_رحلات-سياحية-في-القاهرة_جولات-الإسكندرية-من-القاهرة.php.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\alrahaftours.com_en_tours_alex-dayuse_.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.almosafer.com_en_travel_flights_flights-to-alexandria-hbe.json
+21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\global.almosafer.com_en_travel_flights_flights-from-alexandria-hbe.json
