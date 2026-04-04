@@ -12,3 +12,9 @@ patchright==1.58.2
 
 # Parsers used by BeautifulSoup and Scrapling's internal logic
 lxml==6.0.2
+
+# API / Web App
+fastapi==0.115.0
+uvicorn==0.30.0
+pydantic==2.9.0
+python-multipart==0.0.9

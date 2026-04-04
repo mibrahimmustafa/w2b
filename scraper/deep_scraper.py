@@ -2,163 +2,199 @@
 scraper.deep_scraper
 ====================
 Deep content extraction using Scrapling's stealth browser engine.
-
-The :class:`DeepScraper` orchestrates a per-URL Playwright-based spider
-that bypasses common bot-detection mechanisms.  It returns strongly-typed
-``ScrapedPage`` dicts so callers never have to guess the shape of the data.
-
-Usage::
-
-    from scraper import DeepScraper, ScraperConfig
-
-    config = ScraperConfig()
-    scraper = DeepScraper(config)
-    page = scraper.run("https://example.com")
-    if page:
-        print(page["metadata"]["title"])
+Modified to support batch scraping with concurrency control.
 """
 
 from __future__ import annotations
-
-from typing import Optional, TypedDict
+import asyncio
+import re
+import traceback
+from typing import Optional, TypedDict, List
 
 from scrapling.fetchers import AsyncStealthySession
-from scrapling.spiders import Response, Spider
-
+from scrapling.core import Response
 from .logger import get_logger
 
 logger = get_logger(__name__)
-
 
 # ---------------------------------------------------------------------------
 # Public types
 # ---------------------------------------------------------------------------
 class PageMetadata(TypedDict):
     """Basic metadata extracted from a scraped page."""
-
     url: str
     title: str
     description: str
 
+class SocialMediaData(TypedDict):
+    """Specific data for social media posts."""
+    platform: str  # 'facebook', 'instagram', 'x', 'tiktok'
+    post_text: str
+    media_urls: List[str]
+    is_video: bool
 
 class ScrapedPage(TypedDict):
-    """Full result returned by :class:`DeepScraper.run`."""
-
+    """Full result returned by DeepScraper."""
     metadata: PageMetadata
-    headings: dict[str, list[str]]
-    paragraphs: list[str]
-    links: list[str]
-
-
-# ---------------------------------------------------------------------------
-# Spider definition (module-level — no nested/dynamic class generation)
-# ---------------------------------------------------------------------------
-class _ContentSpider(Spider):
-    """
-    Stealth spider that extracts detailed content from a single URL,
-    including metadata, headings, paragraphs, and links.
-    """
-
-    name = "w2b_content_spider"
-    start_urls: list[str] = []
-
-    # Minimum paragraph character length worth keeping
-    _MIN_PARAGRAPH_LEN: int = 40
-    # Maximum number of top paragraphs to retain
-    _MAX_PARAGRAPHS: int = 50
-
-    def configure_sessions(self, manager) -> None:  # type: ignore[override]
-        manager.add(
-            "stealth",
-            AsyncStealthySession(headless=True, network_idle=True, timeout=60_000),
-            default=True,
-        )
-
-    async def parse(self, response: Response):  # type: ignore[override]
-        title = (response.css("title::text").get(default="") or "").strip()
-        description = (response.css("meta[name='description']::attr(content)").get(default="") or "").strip()
-
-        # Extract textual content with deeper xpath joining to handle nested tags like <a> or <span>
-        def _get_clean_text(sel) -> str:
-            return " ".join(t.strip() for t in sel.xpath(".//text()").getall() if t.strip())
-
-        # Extract headings
-        headings = {
-            "h1": [ _get_clean_text(h) for h in response.css("h1") if _get_clean_text(h) ],
-            "h2": [ _get_clean_text(h) for h in response.css("h2") if _get_clean_text(h) ],
-            "h3": [ _get_clean_text(h) for h in response.css("h3") if _get_clean_text(h) ],
-        }
-
-        # Extract paragraphs (all combined nested text)
-        all_paragraphs = []
-        for p in response.css("p"):
-            p_text = _get_clean_text(p)
-            if len(p_text) >= self._MIN_PARAGRAPH_LEN:
-                all_paragraphs.append(p_text)
-        
-        # Deduplicate while preserving order
-        unique_paragraphs = list(dict.fromkeys(all_paragraphs))[:self._MAX_PARAGRAPHS]
-
-        # Extract useful unique links on the page
-        all_links = []
-        for a in response.css("a::attr(href)").getall():
-            link = a.strip()
-            if link and not link.startswith(("javascript:", "mailto:", "tel:", "#")):
-                if link not in all_links:
-                    all_links.append(link)
-
-        yield ScrapedPage(
-            metadata=PageMetadata(url=response.url, title=title, description=description),
-            headings=headings,
-            paragraphs=unique_paragraphs,
-            links=all_links[:100],  # Limit to top 100 links
-        )
-
+    headings: Dict[str, List[str]]
+    paragraphs: List[str]
+    links: List[str]
+    social_data: Optional[SocialMediaData]
 
 # ---------------------------------------------------------------------------
 # DeepScraper
 # ---------------------------------------------------------------------------
 class DeepScraper:
     """
-    Orchestrates stealth scraping of individual pages.
-
-    Args:
-        config: Optional scraper config (reserved for future per-page tuning).
+    Orchestrates stealth scraping with concurrency control.
     """
+    _MAX_CONCURRENT_BROWSERS = 3  # Limit browsers to prevent crashes
+    _MIN_PARAGRAPH_LEN = 40
+    _MAX_PARAGRAPHS = 50
 
     def __init__(self) -> None:
-        pass  # config injection ready for future extension
+        pass
 
-    def run(self, url: str) -> Optional[ScrapedPage]:
+    def run(self, urls: str | List[str]) -> List[ScrapedPage]:
         """
-        Scrape *url* and return the extracted content.
-
-        Args:
-            url: Fully-qualified URL to scrape.
-
-        Returns:
-            A :class:`ScrapedPage` dict on success, or ``None`` if the
-            page could not be fetched or no items were yielded.
+        Synchronous wrapper that correctly manages the asyncio event loop.
         """
+        if isinstance(urls, str):
+            urls = [urls]
+        if not urls:
+            return []
+
+        # Run the async logic and handle the loop properly
+        return asyncio.run(self._run_batch_async(urls))
+
+    async def _run_batch_async(self, urls: List[str]) -> List[ScrapedPage]:
+        """Runs multiple URLs in parallel with a concurrency limit."""
+        semaphore = asyncio.Semaphore(self._MAX_CONCURRENT_BROWSERS)
+        
+        async def sem_scrape(url: str):
+            async with semaphore:
+                return await self._scrape_single_async(url)
+
+        tasks = [sem_scrape(url) for url in urls]
+        results = await asyncio.gather(*tasks)
+        
+        # Filter out None results (failed scrapes)
+        return [r for r in results if r is not None]
+
+    async def _scrape_single_async(self, url: str) -> Optional[ScrapedPage]:
+        """Internal async method to scrape a single URL."""
         logger.debug("Starting deep scrape: %s", url)
-        try:
-            # Assign URL at class level so the Spider framework picks it up
-            _ContentSpider.start_urls = [url]
-            spider = _ContentSpider()
-            result = spider.start()
+        platform = self._identify_platform(url)
 
-            if not result.items:
-                logger.warning("No items extracted from: %s", url)
+        # Exclude Facebook groups
+        if platform == "facebook-group":
+            logger.info("Excluding Facebook group URL: %s", url)
+            return None
+
+        session = None
+        try:
+            session = AsyncStealthySession(headless=True, network_idle=True, timeout=60000)
+            response = await session.get(url)
+            
+            if not response:
+                logger.warning("No response for: %s", url)
                 return None
 
-            page: ScrapedPage = result.items[0]
-            logger.debug(
-                "Scraped '%s' — %d paragraph(s).",
-                page["metadata"].get("title", url),
-                len(page["paragraphs"]),
-            )
-            return page
+            # Extract basic data
+            title = (response.css("title::text").get(default="") or "").strip()
+            description = (response.css("meta[name='description']::attr(content)").get(default="") or "").strip()
 
-        except Exception as exc:  # noqa: BLE001 — broad catch is intentional
-            logger.error("Deep-scrape failed for '%s': %s", url, exc)
+            def _get_clean_text(sel) -> str:
+                return " ".join(t.strip() for t in sel.xpath(".//text()").getall() if t.strip())
+
+            headings = {
+                "h1": [_get_clean_text(h) for h in response.css("h1") if _get_clean_text(h)],
+                "h2": [_get_clean_text(h) for h in response.css("h2") if _get_clean_text(h)],
+                "h3": [_get_clean_text(h) for h in response.css("h3") if _get_clean_text(h)],
+            }
+
+            all_paragraphs = []
+            for p in response.css("p"):
+                p_text = _get_clean_text(p)
+                if len(p_text) >= self._MIN_PARAGRAPH_LEN:
+                    all_paragraphs.append(p_text)
+            
+            unique_paragraphs = list(dict.fromkeys(all_paragraphs))[:self._MAX_PARAGRAPHS]
+
+            all_links = []
+            for a in response.css("a::attr(href)").getall():
+                link = a.strip()
+                if link and not link.startswith(("javascript:", "mailto:", "tel:", "#")):
+                    if link not in all_links:
+                        all_links.append(link)
+
+            social_data = None
+            if platform:
+                social_data = self._extract_social_data(response, platform)
+
+            logger.debug("Scraped '%s' — %d paragraph(s).", title or url, len(unique_paragraphs))
+            
+            return {
+                "metadata": {"url": url, "title": title, "description": description},
+                "headings": headings,
+                "paragraphs": unique_paragraphs,
+                "links": all_links[:100],
+                "social_data": social_data,
+            }
+
+        except Exception:
+            logger.error("Deep-scrape failed for '%s': %s", url, traceback.format_exc())
             return None
+        finally:
+            if session:
+                await session.close()
+
+    def _identify_platform(self, url: str) -> Optional[str]:
+        low_url = url.lower()
+        if "facebook.com" in low_url:
+            if "/groups/" in low_url: return "facebook-group"
+            return "facebook"
+        if "instagram.com" in low_url: return "instagram"
+        if "twitter.com" in low_url or "x.com" in low_url: return "x"
+        if "tiktok.com" in low_url: return "tiktok"
+        return None
+
+    def _extract_social_data(self, response: Response, platform: str) -> SocialMediaData:
+        post_text = ""
+        media_urls = []
+        is_video = False
+
+        if platform == "facebook":
+            post_text = response.css('div[data-ad-comet-preview="message"]::text, div[data-testid="post_message"]::text').get(default="").strip()
+            media_urls = response.css('div[role="article"] img::attr(src)').getall()
+            videos = response.css('video::attr(src)').getall()
+            if videos:
+                media_urls.extend(videos)
+                is_video = True
+        elif platform == "instagram":
+            post_text = response.css('h1::text, article span::text').get(default="").strip()
+            media_urls = response.css('article img::attr(src)').getall()
+            videos = response.css('video::attr(src)').getall()
+            if videos:
+                media_urls.extend(videos)
+                is_video = True
+        elif platform == "x":
+            post_text = response.css('div[data-testid="tweetText"]::text').get(default="").strip()
+            media_urls = response.css('div[data-testid="tweetPhoto"] img::attr(src)').getall()
+            videos = response.css('video::attr(src)').getall()
+            if videos:
+                media_urls.extend(videos)
+                is_video = True
+        elif platform == "tiktok":
+            post_text = response.css('h1[data-e2e="browse-video-desc"]::text, [data-e2e="video-desc"]::text').get(default="").strip()
+            videos = response.css('video source::attr(src), video::attr(src)').getall()
+            if videos:
+                media_urls = videos
+                is_video = True
+
+        return {
+            "platform": platform,
+            "post_text": post_text,
+            "media_urls": list(set(media_urls)),
+            "is_video": is_video,
+        }

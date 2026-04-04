@@ -143,19 +143,17 @@ def run_pipeline(config: ScraperConfig, *, skip_scrape: bool = False) -> None:
     logger.info("=" * 55)
 
     scraper = DeepScraper()
+    urls = [item["url"] for item in discovered]
+    
+    # Process batch
+    scraped_results = scraper.run(urls)
+    
     success_count = 0
-
-    for idx, item in enumerate(discovered, start=1):
-        url = item["url"]
-        logger.info("[%d/%d] Scraping: %s", idx, len(discovered), url)
-
-        page_data = scraper.run(url)
-        if page_data:
-            file_path = config.output_dir / _sanitize_filename(url)
-            save_json(page_data, file_path)
-            success_count += 1
-
-        time.sleep(config.request_delay)
+    for page in scraped_results:
+        url = page["metadata"]["url"]
+        file_path = config.output_dir / _sanitize_filename(url)
+        save_json(page, file_path)
+        success_count += 1
 
     logger.info("=" * 55)
     logger.info(
@@ -182,8 +180,11 @@ def main() -> None:
     config = ScraperConfig(
         query=query,
         max_pages=args.pages,
-        output_dir=args.output_dir,
     )
+    # If the user provided an explicit output-dir via CLI, override the dynamic one
+    if args.output_dir != Path("scraped_results"):
+        config.output_dir = args.output_dir
+    
     config.validate()
 
     run_pipeline(config, skip_scrape=args.skip_scrape)

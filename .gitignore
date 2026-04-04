@@ -1,0 +1,5 @@
+logs/*
+scraped_results/*
+__pycache__/*
+.env
+__pycache__

@@ -10,7 +10,9 @@ keyword arguments.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 
 
@@ -56,10 +58,33 @@ class ScraperConfig:
     user_agent: str = DEFAULT_USER_AGENT
 
     def __post_init__(self) -> None:
+        # If no explicit output_dir is given, generate a dynamic one
+        if self.output_dir == _DEFAULT_OUTPUT_DIR and self.query:
+            self.output_dir = self.get_dynamic_output_dir()
+            
         # Coerce str → Path in case the caller passed a plain string
         if not isinstance(self.output_dir, Path):
             self.output_dir = Path(self.output_dir)
+        
         self.output_dir.mkdir(parents=True, exist_ok=True)
+
+    def get_dynamic_output_dir(self) -> Path:
+        """
+        Generate a path like: scraped_results/my_query_2026-04-04/
+        """
+        slug = self._slugify(self.query)
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        folder_name = f"{slug}_{date_str}"
+        return _DEFAULT_OUTPUT_DIR / folder_name
+
+    @staticmethod
+    def _slugify(text: str) -> str:
+        """Convert a string to a safe filesystem folder name."""
+        # Convert to lowercase, replace non-alphanumeric with underscores
+        s = text.lower().strip()
+        s = re.sub(r"[^\w\s-]", "", s)
+        s = re.sub(r"[\s_-]+", "_", s)
+        return s.strip("_")
 
     # ------------------------------------------------------------------
     # Validation helpers
