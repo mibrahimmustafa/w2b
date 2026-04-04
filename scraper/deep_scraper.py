@@ -12,7 +12,7 @@ import traceback
 from typing import Optional, TypedDict, List
 
 from scrapling.fetchers import AsyncStealthySession
-from scrapling.core import Response
+from scrapling.spiders import Response
 from .logger import get_logger
 
 logger = get_logger(__name__)

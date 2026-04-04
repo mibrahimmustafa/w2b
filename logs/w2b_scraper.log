@@ -198,3 +198,7 @@
 14:59:17 [INFO    ] W2B.__main__: =======================================================
 14:59:17 [INFO    ] W2B.__main__: Done. 5 / 10 page(s) scraped successfully. Output → scraped_results\اسوان_2026-04-04
 14:59:17 [INFO    ] W2B.__main__: =======================================================
+15:02:01 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+15:03:13 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+15:03:24 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+15:03:25 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
