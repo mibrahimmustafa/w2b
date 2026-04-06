@@ -1,69 +1,798 @@
+00:35:59 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+00:36:02 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
+00:36:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_داخل_مصر_2026-04-07
+00:36:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://go-bus.com/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.talahvacation.com/egypt-tours
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://mashrektours.com/trips-inside-egypt/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://sallamlimo.com/رحلات-سياحية-داخل-مصر/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://mike-travel.com/tourslist/inside/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://almazentours.com/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.lailtravel.com/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://trips-4u.net/Egypt-Hotels
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://toptripmasr.com/product-category/رحلات-داخل-مصر/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.eg/eg/ar-ae/egp/flights/domestic-country-flights/eg/cheap-domestic-flights-insurance-egypt
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar/رحلات-داخلية
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Domestic-Offers
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://yalasafir.com/global-packages/egypt-offers/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://howeyahtravel.com/عروض-شركات-سياحة-داخلية-في-مصر/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://safir.travel/product-category/رحلات-سياحية-داخل-مصر/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://kenzytours.com/سياحة-داخلية/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/2335546323245861/posts/4000897536710723/
+00:36:53 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/watch?v=dJJ_TYDmuHk
+00:36:53 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+00:36:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+00:36:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://go-bus.com/
+00:36:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.talahvacation.com/egypt-tours
+00:38:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 21 paragraph(s).
+00:38:07 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://mashrektours.com/trips-inside-egypt/
+00:38:10 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات مصر | سياحه في مصر | رحلات داخل مصر' — 7 paragraph(s).
+00:38:11 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sallamlimo.com/رحلات-سياحية-داخل-مصر/
+00:38:11 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'جوباص | موقع حجز أتوبيسات السفر داخل مصر' — 1 paragraph(s).
+00:38:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://mike-travel.com/tourslist/inside/
+00:39:20 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر فضل فنادق ومنتجعات بأسعار تنافسية . المشرق للسياحة - Al Mashrek Tours' — 4 paragraph(s).
+00:39:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://almazentours.com/
+00:39:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر - شركة مايك للسياحة' — 3 paragraph(s).
+00:39:27 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.lailtravel.com/
+00:39:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'تجربة رحلات سياحية داخل مصر مع شركة سلام ليموزين' — 50 paragraph(s).
+00:39:30 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://trips-4u.net/Egypt-Hotels
+00:40:36 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'المازن للسياحة  -  رحلات المازن' — 10 paragraph(s).
+00:40:36 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://toptripmasr.com/product-category/رحلات-داخل-مصر/
+00:40:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 2 paragraph(s).
+00:40:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/
+00:40:47 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر, حجز فنادق مصر, اجازات وشهر العسل' — 13 paragraph(s).
+00:40:47 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyscanner.com.eg/eg/ar-ae/egp/flights/domestic-country-flights/eg/cheap-domestic-flights-insurance-egypt
+00:41:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\عروض_رحلات_داخل_مصر_2026-04-07
+00:41:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+00:41:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر الأرشيف - Top Trip Masr' — 2 paragraph(s).
+00:41:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar/رحلات-داخلية
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Domestic-Offers
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/رحلات-داخلية
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://alrahaftours.com/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/2335546323245861/posts/4000897536710723/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyin.com/airlines/Egypt-Air.ar.html
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Occasions-Offers
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.travelotleh.com/ar/airlines/egyptair-flight-booking/cheap-flights-ms
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.agazatclub.travel/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/rahalateg/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.sa/flights-to/eg/cheap-flights-to-egypt.html
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/airlines/egyptair
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.wingie.com/flights/airlines/egyptair/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.egyptair.com/ar/Plan/special-offers/offers/Pages/offer-conditions.aspx
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://flights.airarabia.com/en/
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.google.com/travel/flights/flights-from-cairo.html?gl=US&hl=en-US
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.egyptair.com/ar/book/pages/book-flight.aspx
+00:41:54 [DEBUG   ] W2B.scraper.search:   + https://www.etihad.com/en-us/flights/flights-to-egypt
+00:41:54 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+00:41:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+00:41:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Domestic-Offers
+00:41:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/رحلات-داخلية
+00:41:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'اجازات مصر – موقع لحجز الفنادق والرحلات داخل وخارج مصر' — 8 paragraph(s).
+00:42:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية في مصر' — 7 paragraph(s).
+00:42:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Domestic-Offers
+00:42:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://yalasafir.com/global-packages/egypt-offers/
+00:43:11 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر | رحلات سياحية | عروض شركات السياحة' — 21 paragraph(s).
+00:43:12 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'سياحة داخلية | رحلات داخل مصر - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 5 paragraph(s).
+00:43:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alrahaftours.com/
+00:43:13 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/
+00:43:15 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+00:43:17 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+00:43:29 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://howeyahtravel.com/عروض-شركات-سياحة-داخلية-في-مصر/
+00:43:31 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'سياحة داخلية | رحلات داخل مصر - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 5 paragraph(s).
+00:43:33 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmamsha.com/
+00:43:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://safir.travel/product-category/رحلات-سياحية-داخل-مصر/
+00:43:38 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'السياحة إلى مصر مع يلا-سافر | اكتشف حضارة التاريخ وتجربة السفر المتكاملة من السعودية' — 44 paragraph(s).
+00:43:41 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://kenzytours.com/سياحة-داخلية/
+00:44:21 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الرهف للسياحة' — 5 paragraph(s).
+00:44:21 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/groups/2335546323245861/posts/4000897536710723/
+00:44:21 [INFO    ] W2B.scraper.deep_scraper: Excluding Facebook group URL: https://www.facebook.com/groups/2335546323245861/posts/4000897536710723/
+00:44:21 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyin.com/airlines/Egypt-Air.ar.html
+00:44:28 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'اجازات مصر – موقع لحجز الفنادق والرحلات داخل وخارج مصر' — 8 paragraph(s).
+00:44:28 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Occasions-Offers
+00:44:47 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أفضل عروض سياحة ورحلات داخلية في مصر | الممشى لعروض السياحة والرحلات' — 4 paragraph(s).
+00:44:47 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelotleh.com/ar/airlines/egyptair-flight-booking/cheap-flights-ms
+00:44:50 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'افضل عروض شركات سياحة داخلية في مصر 2025 من هوية للسياحة' — 37 paragraph(s).
+00:44:50 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'التصنيف: رحلات سياحية داخل مصر - سفير للسياحة' — 2 paragraph(s).
+00:44:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/groups/2335546323245861/posts/4000897536710723/
+00:44:51 [INFO    ] W2B.scraper.deep_scraper: Excluding Facebook group URL: https://www.facebook.com/groups/2335546323245861/posts/4000897536710723/
+00:44:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youtube.com/watch?v=dJJ_TYDmuHk
+00:44:58 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'سياحة داخلية في مصر - أفضل الوجهات السياحية مع كنزي تورز' — 3 paragraph(s).
+00:45:32 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - احجز رحلتك على طيران الخطوط المصرية بافضل سعر' — 41 paragraph(s).
+00:45:33 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatclub.travel/
+00:45:39 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض المناسبات داخل و خارج مصر  - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 50 paragraph(s).
+00:45:40 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/rahalateg/
+00:45:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز الخطوط الجوية المصرية  | حجز تذاكر طيران رخيصة' — 10 paragraph(s).
+00:45:57 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyscanner.com.sa/flights-to/eg/cheap-flights-to-egypt.html
+00:46:05 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مختارات رحلات أونلاين - رحلات داخل مصر - القاهرة - سهرات عشاء نيلية - المطعم العائم النايل كريستال - YouTube' — 0 paragraph(s).
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\go-bus.com_.json
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\www.talahvacation.com_egypt-tours.json
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\mashrektours.com_trips-inside-egypt_.json
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\sallamlimo.com_رحلات-سياحية-داخل-مصر_.json
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\mike-travel.com_tourslist_inside_.json
+00:46:08 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\almazentours.com_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\www.lailtravel.com_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\trips-4u.net_Egypt-Hotels.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\toptripmasr.com_product-category_رحلات-داخل-مصر_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\agazatmasr.com_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\www.skyscanner.com.eg_eg_ar-ae_egp_flights_domestic-country-flights_eg_cheap-domestic-flights-insura.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\www.travelyalla.com_ar_رحلات-داخلية.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\skyegtours.com_eg_ar_Domestic-Offers.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\yalasafir.com_global-packages_egypt-offers_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\howeyahtravel.com_عروض-شركات-سياحة-داخلية-في-مصر_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\safir.travel_product-category_رحلات-سياحية-داخل-مصر_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\kenzytours.com_سياحة-داخلية_.json
+00:46:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_داخل_مصر_2026-04-07\www.youtube.com_watch_v_dJJ_TYDmuHk.json
+00:46:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أجازات كلوب: حجز فنادق | رحلات الغردقة | رحلات شرم الشيخ | رحلات شهر عسل | رحلات خارج مصر' — 7 paragraph(s).
+00:46:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/en/travel/airlines/egyptair
+00:46:47 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات و عروض سياحية | Cairo  | Facebook' — 0 paragraph(s).
+00:46:49 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.wingie.com/flights/airlines/egyptair/
+00:46:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07
+00:46:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.eg/eg/ar-ae/egp/flights/domestic-country-flights/eg/cheap-domestic-flights-insurance-egypt
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Domestic-Offers
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.egyptke.com/232922
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar/رحلات-داخلية
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://vacations-time.com/ar/أسعار-رحلات-سياحية-داخل-مصر/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://yalasafir.com/global-packages/egypt-offers/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.flyin.com/airlines/Egypt-Air.ar.html
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.flydubai.com/ar-ae/flights-to-egypt/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.travelotleh.com/ar/airlines/egyptair-flight-booking/cheap-flights-ms
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://egsky.net/ar/أسعار-تذاكر-الطيران-مصر-للطيران/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.wingie.ae/flights/airlines/egyptair/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.skyegtours.com/سياحة-داخلية-رحلات-داخل-مصر
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.kayak.sa/flight-routes/Saudi-Arabia-SA0/Cairo-CAI
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.egyptair.com/ar/Book/Pages/book-flight.aspx
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/airlines/egyptair
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://flights.airarabia.com/en/
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.google.com/travel/flights/flights-from-cairo.html?gl=US&hl=en-US
+00:46:56 [DEBUG   ] W2B.scraper.search:   + https://www.wingie.com/flights/airlines/egyptair/
+00:46:56 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+00:46:56 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+00:46:56 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyscanner.com.eg/eg/ar-ae/egp/flights/domestic-country-flights/eg/cheap-domestic-flights-insurance-egypt
+00:46:56 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Domestic-Offers
+00:47:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flights to Egypt | Skyscanner' — 5 paragraph(s).
+00:47:31 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egyptair.com/ar/Plan/special-offers/offers/Pages/offer-conditions.aspx
+00:47:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Egyptair ✈︎ Book Egyptair Airlines Online | Egyptair Flights & Ticket Booking' — 50 paragraph(s).
+00:47:57 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://flights.airarabia.com/en/
+00:48:04 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Egyptair Flights, Book Egyptair Ticket' — 1 paragraph(s).
+00:48:08 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.google.com/travel/flights/flights-from-cairo.html?gl=US&hl=en-US
+00:48:16 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'سياحة داخلية | رحلات داخل مصر - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 5 paragraph(s).
+00:48:17 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر | رحلات سياحية | عروض شركات السياحة' — 21 paragraph(s).
+00:48:19 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egyptke.com/232922
+00:48:20 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmamsha.com/
+00:48:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية في مصر' — 7 paragraph(s).
+00:48:34 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar/رحلات-داخلية
+00:48:45 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - 
+	عرض' — 6 paragraph(s).
+00:48:48 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egyptair.com/ar/book/pages/book-flight.aspx
+00:49:13 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flight Deals With Air Arabia' — 6 paragraph(s).
+00:49:15 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.etihad.com/en-us/flights/flights-to-egypt
+00:49:22 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Find Cheap Flights from Cairo - Google Flights' — 4 paragraph(s).
+00:49:29 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أفضل أماكن سياحية بأسعار اقتصادية داخل مصر.. خبير يكشف عن رحلات مميزة|خاص' — 14 paragraph(s).
+00:49:32 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://vacations-time.com/ar/أسعار-رحلات-سياحية-داخل-مصر/
+00:49:33 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أفضل عروض سياحة ورحلات داخلية في مصر | الممشى لعروض السياحة والرحلات' — 4 paragraph(s).
+00:49:33 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://yalasafir.com/global-packages/egypt-offers/
+00:49:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+00:49:50 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyin.com/airlines/Egypt-Air.ar.html
+00:50:08 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - 
+	حجز الرحلة' — 4 paragraph(s).
+00:50:36 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Flights to Egypt - Book direct for the best flight deals | Etihad Airways' — 5 paragraph(s).
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\skyegtours.com_eg_ar_Domestic-Offers.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.travelyalla.com_ar-eg_رحلات-داخلية.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\alrahaftours.com_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\agazatmasr.com_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\elmamsha.com_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.flyin.com_airlines_Egypt-Air.ar.html.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\skyegtours.com_eg_ar_Occasions-Offers.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.travelotleh.com_ar_airlines_egyptair-flight-booking_cheap-flights-ms.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.agazatclub.travel_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.facebook.com_rahalateg_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.skyscanner.com.sa_flights-to_eg_cheap-flights-to-egypt.html.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\global.almosafer.com_en_travel_airlines_egyptair.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.wingie.com_flights_airlines_egyptair_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.egyptair.com_ar_Plan_special-offers_offers_Pages_offer-conditions.aspx.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\flights.airarabia.com_en_.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.google.com_travel_flights_flights-from-cairo.html_gl_US_hl_en-US.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.egyptair.com_ar_book_pages_book-flight.aspx.json
+00:50:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\عروض_رحلات_داخل_مصر_2026-04-07\www.etihad.com_en-us_flights_flights-to-egypt.json
+00:50:47 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'السياحة إلى مصر مع يلا-سافر | اكتشف حضارة التاريخ وتجربة السفر المتكاملة من السعودية' — 44 paragraph(s).
+00:50:48 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flydubai.com/ar-ae/flights-to-egypt/
+00:50:51 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أسعار رحلات سياحية داخل مصر | فاكيشن تايم' — 35 paragraph(s).
+00:50:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelotleh.com/ar/airlines/egyptair-flight-booking/cheap-flights-ms
+00:51:00 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - احجز رحلتك على طيران الخطوط المصرية بافضل سعر' — 41 paragraph(s).
+00:51:02 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://egsky.net/ar/أسعار-تذاكر-الطيران-مصر-للطيران/
+00:51:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\حجز_رحلات_داخل_مصر_2026-04-07
+00:51:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.travelotleh.com/ar/airlines/egyptair-flight-booking/cheap-flights-ms
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.agazatmasr.com/domestic
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://eg.flyin.com/airlines/Egypt-Air.ar.html
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.travomint.ae/airlines/egyptair-ms
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.agazatclub.travel/
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.agazatko.com/رحلات-داخل-مصر.html
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.egyptair.com/ar/Pages/HomePage.aspx
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.alternativeairlines.com/ar/domestic-flights-egypt
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://sa.wego.com/flights
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.skyscanner.com.eg/eg/ar-ae/egp/flights/domestic-country-flights/eg/cheap-domestic-flights-insurance-egypt
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Domestic-Offers
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar/رحلات-داخلية
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.flyin.com/ar/flights
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/ar/مصر-للطيران/خطوط-طيران/سافر
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.wingie.com/flights/airlines/egyptair/
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/airlines/egyptair
+00:51:55 [DEBUG   ] W2B.scraper.search:   + https://www.google.com/travel/flights/flights-from-cairo.html?gl=US&hl=en-US
+00:51:55 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+00:51:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/
+00:51:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelotleh.com/ar/airlines/egyptair-flight-booking/cheap-flights-ms
+00:51:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatmasr.com/domestic
+00:51:59 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز الخطوط الجوية المصرية  | حجز تذاكر طيران رخيصة' — 10 paragraph(s).
+00:52:04 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'احجز رحلات إلى مصر بأسعار تبدأ من AED 875 - فلاي دبي' — 7 paragraph(s).
+00:52:13 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أسعار تذاكر الطيران مصر للطيران' — 7 paragraph(s).
+00:52:13 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.wingie.ae/flights/airlines/egyptair/
+00:52:15 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyegtours.com/سياحة-داخلية-رحلات-داخل-مصر
+00:52:15 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.kayak.sa/flight-routes/Saudi-Arabia-SA0/Cairo-CAI
+00:53:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز الخطوط الجوية المصرية  | حجز تذاكر طيران رخيصة' — 10 paragraph(s).
+00:53:07 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://eg.flyin.com/airlines/Egypt-Air.ar.html
+00:53:11 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'اجازات مصر – موقع لحجز الفنادق والرحلات داخل وخارج مصر' — 8 paragraph(s).
+00:53:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Egypt-Hotels
+00:53:14 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الفنادق – اجازات مصر' — 14 paragraph(s).
+00:53:15 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travomint.ae/airlines/egyptair-ms
+00:53:23 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '404 Not Found' — 2 paragraph(s).
+00:53:24 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egyptair.com/ar/Book/Pages/book-flight.aspx
+00:53:26 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز طيران على مصر للطيران، عروض مصر للطيران للرحلات' — 1 paragraph(s).
+00:53:33 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/en/travel/airlines/egyptair
+00:53:40 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات طيران رخيصة بسعر 203 ﷼ إلى القاهرة | KAYAK' — 9 paragraph(s).
+00:53:47 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://flights.airarabia.com/en/
+00:54:15 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - احجز رحلتك على طيران الخطوط المصرية بافضل سعر' — 40 paragraph(s).
+00:54:16 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatclub.travel/
+00:54:24 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر, حجز فنادق مصر, اجازات وشهر العسل' — 13 paragraph(s).
+00:54:24 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatko.com/رحلات-داخل-مصر.html
+00:54:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز تذاكر طيران مصرية رخيصة: حجز رحلات جماعية وعروض مميزة' — 22 paragraph(s).
+00:54:34 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egyptair.com/ar/Pages/HomePage.aspx
+00:54:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - 
+	حجز الرحلة' — 4 paragraph(s).
+00:54:49 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.google.com/travel/flights/flights-from-cairo.html?gl=US&hl=en-US
+00:54:55 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Egyptair ✈︎ Book Egyptair Airlines Online | Egyptair Flights & Ticket Booking' — 50 paragraph(s).
+00:54:56 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.wingie.com/flights/airlines/egyptair/
+00:55:08 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flight Deals With Air Arabia' — 6 paragraph(s).
+00:55:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أجازات كلوب: حجز فنادق | رحلات الغردقة | رحلات شرم الشيخ | رحلات شهر عسل | رحلات خارج مصر' — 7 paragraph(s).
+00:55:27 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.alternativeairlines.com/ar/domestic-flights-egypt
+00:55:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'https://www.agazatko.com/رحلات-داخل-مصر.html' — 0 paragraph(s).
+00:55:31 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sa.wego.com/flights
+00:55:55 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران - 
+    HomePage' — 10 paragraph(s).
+00:55:56 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyscanner.com.eg/eg/ar-ae/egp/flights/domestic-country-flights/eg/cheap-domestic-flights-insurance-egypt
+00:56:01 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Find Cheap Flights from Cairo - Google Flights' — 4 paragraph(s).
+00:56:06 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Egyptair Flights, Book Egyptair Ticket' — 1 paragraph(s).
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.skyscanner.com.eg_eg_ar-ae_egp_flights_domestic-country-flights_eg_cheap-domestic-flights-insura.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\skyegtours.com_eg_ar_Domestic-Offers.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.egyptke.com_232922.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\elmamsha.com_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.travelyalla.com_ar_رحلات-داخلية.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\vacations-time.com_ar_أسعار-رحلات-سياحية-داخل-مصر_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\yalasafir.com_global-packages_egypt-offers_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.flyin.com_airlines_Egypt-Air.ar.html.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.flydubai.com_ar-ae_flights-to-egypt_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.travelotleh.com_ar_airlines_egyptair-flight-booking_cheap-flights-ms.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\egsky.net_ar_أسعار-تذاكر-الطيران-مصر-للطيران_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.wingie.ae_flights_airlines_egyptair_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.skyegtours.com_سياحة-داخلية-رحلات-داخل-مصر.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.kayak.sa_flight-routes_Saudi-Arabia-SA0_Cairo-CAI.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.egyptair.com_ar_Book_Pages_book-flight.aspx.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\global.almosafer.com_en_travel_airlines_egyptair.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\flights.airarabia.com_en_.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.google.com_travel_flights_flights-from-cairo.html_gl_US_hl_en-US.json
+00:56:09 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\اسعار_رحلات_داخل_مصر_2026-04-07\www.wingie.com_flights_airlines_egyptair_.json
+00:56:50 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'احجز رحلات طيران داخلية في مصر | Alternative Airlines' — 20 paragraph(s).
+00:56:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\باقات_سفر_داخل_مصر_2026-04-07
+00:56:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+00:56:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Domestic-Offers
+00:56:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجز طيران، ارخص طيران، تذاكر طيران | Sa.wego.com ويجو' — 1 paragraph(s).
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://yalasafir.com/global-packages/egypt-offers/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.egypttourpackages.com/ar/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.almounafies.com/ar/packages/international-tour-packages/tourism-egypt/tours-egypt
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/عروض-سياحيه-لمصر/عروض-سياحية-الى-مصر.php
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://ar.egypttoursinfo.com/باقات-رحلات-مصر/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.egypttour-packages.com/ar/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.mytrips.travel/ar/package-details/enchanting-egypt/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.almounafies.com/ar/packages/international-tour-packages/egypt
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://contact.eg/products/travel-and-tourism
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.cibeg.com/ar/personal/cib-offers/offers?oi={D2D13587-85B1-458A-96FC-CCBEB66334E9}
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://traveltalez.com/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://aseeltravels.com/packages/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.qatarairways.com/ar-eg/homepage.html
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://leaptowns.com/عروض-شركة-مصر-للسياحة/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.egypttourpackages.com/ar/أفضل-العروض-السياحية-في-مصر/عروض-مصر-الفاخرة.php
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.agazatclub.travel/
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/Egypt-Excursions/عروض-سياحيه-لمصر.php
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/61098-رحلات-شهر-العسل-داخل-مصر
+00:56:55 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/tour/سفرة-الي-مصر-لمدة-8-ايام-بالطيران
+00:56:55 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+00:56:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+00:56:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://yalasafir.com/global-packages/egypt-offers/
+00:56:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egypttourpackages.com/ar/
+00:57:15 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية في مصر' — 7 paragraph(s).
+00:57:19 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar/رحلات-داخلية
+00:57:20 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+00:58:00 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'سياحة داخلية | رحلات داخل مصر - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 5 paragraph(s).
+00:58:00 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyin.com/ar/flights
+00:58:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 21 paragraph(s).
+00:58:10 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'السياحة إلى مصر مع يلا-سافر | اكتشف حضارة التاريخ وتجربة السفر المتكاملة من السعودية' — 44 paragraph(s).
+00:58:10 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almounafies.com/ar/packages/international-tour-packages/tourism-egypt/tours-egypt
+00:58:11 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/عروض-سياحيه-لمصر/عروض-سياحية-الى-مصر.php
+00:58:13 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'شركة إيجيبت تور باكدج للسياحة | رحلات سياحية لمصر | أفضل عروض السفر لمصر' — 26 paragraph(s).
+00:58:18 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://ar.egypttoursinfo.com/باقات-رحلات-مصر/
+00:58:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 21 paragraph(s).
+00:58:32 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+00:58:34 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almosafer.com/ar/مصر-للطيران/خطوط-طيران/سافر
+00:58:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.wingie.com/flights/airlines/egyptair/
+00:59:10 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'حجزطيران، افضل اسعار تذاكر الطيران' — 50 paragraph(s).
+00:59:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/en/travel/airlines/egyptair
+00:59:23 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'https://www.almounafies.com/ar/packages/international-tour-packages/tourism-egypt/tours-egypt' — 1 paragraph(s).
+00:59:24 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egypttour-packages.com/ar/
+00:59:25 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض سياحية الى مصر | عروض سياحية الى مصر 2025/2026' — 3 paragraph(s).
+00:59:28 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'GTranslate - Error 402: Subscription Inactive' — 2 paragraph(s).
+00:59:28 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.mytrips.travel/ar/package-details/enchanting-egypt/
+00:59:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Egyptair Flights, Book Egyptair Ticket' — 1 paragraph(s).
+00:59:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.google.com/travel/flights/flights-from-cairo.html?gl=US&hl=en-US
+00:59:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almounafies.com/ar/packages/international-tour-packages/egypt
+00:59:58 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر للطيران ✈︎ احجز طيران مصر للطيران عبر الإنترنت | حجز تذاكر ورحلات مصر للطيران' — 50 paragraph(s).
+01:00:24 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Egyptair ✈︎ Book Egyptair Airlines Online | Egyptair Flights & Ticket Booking' — 50 paragraph(s).
+01:00:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات مصر | باقات السفر المصرية' — 13 paragraph(s).
+01:00:42 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://contact.eg/products/travel-and-tourism
+01:00:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Holiday Packages, Tours & Activity details - Mytrips.travel' — 4 paragraph(s).
+01:00:48 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.cibeg.com/ar/personal/cib-offers/offers?oi={D2D13587-85B1-458A-96FC-CCBEB66334E9}
+01:00:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'https://www.cibeg.com/ar/personal/cib-offers/offers?oi={D2D13587-85B1-458A-96FC-CCBEB66334E9}' — 0 paragraph(s).
+01:00:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://traveltalez.com/
+01:01:03 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'https://www.almounafies.com/ar/packages/international-tour-packages/egypt' — 1 paragraph(s).
+01:01:04 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Find Cheap Flights from Cairo - Google Flights' — 4 paragraph(s).
+01:01:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://aseeltravels.com/packages/
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\agazatmasr.com_.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.travelotleh.com_ar_airlines_egyptair-flight-booking_cheap-flights-ms.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.agazatmasr.com_domestic.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\eg.flyin.com_airlines_Egypt-Air.ar.html.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.trips-4u.net_Egypt-Hotels.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.travomint.ae_airlines_egyptair-ms.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.agazatclub.travel_.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.agazatko.com_رحلات-داخل-مصر.html.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.egyptair.com_ar_Pages_HomePage.aspx.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.alternativeairlines.com_ar_domestic-flights-egypt.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\sa.wego.com_flights.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.skyscanner.com.eg_eg_ar-ae_egp_flights_domestic-country-flights_eg_cheap-domestic-flights-insura.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\skyegtours.com_eg_ar_Domestic-Offers.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.travelyalla.com_ar_رحلات-داخلية.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.flyin.com_ar_flights.json
+01:01:12 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.almosafer.com_ar_مصر-للطيران_خطوط-طيران_سافر.json
+01:01:13 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.wingie.com_flights_airlines_egyptair_.json
+01:01:13 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\global.almosafer.com_en_travel_airlines_egyptair.json
+01:01:13 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\حجز_رحلات_داخل_مصر_2026-04-07\www.google.com_travel_flights_flights-from-cairo.html_gl_US_hl_en-US.json
+01:01:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07
+01:01:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+01:01:51 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'افضل تمويل للسفر والسياحة | برامج تقسيط السفر من كونتكت' — 29 paragraph(s).
+01:01:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.qatarairways.com/ar-eg/homepage.html
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://boardingtourism.com/best-10-day-egypt-tourism-program/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://lorenatraveltourism.com/8-ايام-و7-ليالي-برنامج-سياحي-في-مصر/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://jinantravels.com/tours/egypt-3-days-tour-package/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://tourathna.com/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://www.itactravel.com/travel/برنامج-سياحي-مصر-7-ايام-6-ليالي-3/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://traveltoursarab.com/travel/برنامج-سياحي-مصر-6-ايام-5-ليالي-4/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://alahramalarabi.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://it.pinterest.com/pin/624874517046006434/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://yenitrip.net/honeymoon-in-spain-2/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://lelsyaha.com/travel/رحلات-اليوم-الواحد-في-مصر/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://bayanalyom.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://tawahujkhaliji.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://alokaz.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://ramassidetours.com/أفضل+10+باقات+سياحية+في+مصر
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://jinantravels.com/tours/egypt-10-days-tour-package/
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/عروض-سياحيه-لمصر/باقة-رحلة-مصر-لمدة-11-يومًا.php
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://enjaztravels.com/tours/برنامج-سياحي-في-مصر-لمدة-10-أيام
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://www.tiktok.com/@faa.9511/photo/7601902531500969237
+01:01:54 [DEBUG   ] W2B.scraper.search:   + https://www.tiktok.com/@yallanshoof/video/7621639102022225172
+01:01:54 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+01:01:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://boardingtourism.com/best-10-day-egypt-tourism-program/
+01:01:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://lorenatraveltourism.com/8-ايام-و7-ليالي-برنامج-سياحي-في-مصر/
+01:01:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://jinantravels.com/tours/egypt-3-days-tour-package/
+01:02:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'باقات سفر مميزة وبرامج سياحية مختارة |وكالة أسيل للسفر' — 10 paragraph(s).
+01:02:27 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://leaptowns.com/عروض-شركة-مصر-للسياحة/
+01:02:31 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض سياحية - عروض السفر • 2026 | ترافل تيلز' — 8 paragraph(s).
+01:02:33 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egypttourpackages.com/ar/أفضل-العروض-السياحية-في-مصر/عروض-مصر-الفاخرة.php
+01:03:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'بوردنق للسفر و السياحه أفضل برنامج سياحي في مصر لمدة 10 أيام - خطة شاملة 2026' — 50 paragraph(s).
+01:03:10 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الخطوط الجوية القطرية مصر | الخطوط الجوية القطرية' — 32 paragraph(s).
+01:03:10 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://tourathna.com/
+01:03:10 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatclub.travel/
+01:03:18 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي في مصر لمدة 3 ايام تشمل أهم المناطق الأثرية | جنان للسفر والسياحة' — 1 paragraph(s).
+01:03:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.itactravel.com/travel/برنامج-سياحي-مصر-7-ايام-6-ليالي-3/
+01:03:22 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي في مصر لمدة 8 ايام و7 ليالي: رحلة لا تُنسى بين التاريخ والاستجمام - لورينا للسياحة والسفر' — 35 paragraph(s).
+01:03:25 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://traveltoursarab.com/travel/برنامج-سياحي-مصر-6-ايام-5-ليالي-4/
+01:03:38 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض خرافية من شركة مصر للسياحة بأقل التكاليف' — 33 paragraph(s).
+01:03:38 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/Egypt-Excursions/عروض-سياحيه-لمصر.php
+01:03:46 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'باقات مصر الفاخرة – 2026-2025' — 12 paragraph(s).
+01:03:55 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/packages/61098-رحلات-شهر-العسل-داخل-مصر
+01:04:20 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'تراثنا للسياحة – بوابتك لاستكشاف مصر' — 3 paragraph(s).
+01:04:21 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alahramalarabi.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:04:23 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أجازات كلوب: حجز فنادق | رحلات الغردقة | رحلات شرم الشيخ | رحلات شهر عسل | رحلات خارج مصر' — 7 paragraph(s).
+01:04:23 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/tour/سفرة-الي-مصر-لمدة-8-ايام-بالطيران
+01:04:49 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي مصر 6 ايام 5 ليالي - برنامج سياحي القاهرة' — 24 paragraph(s).
+01:04:49 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://it.pinterest.com/pin/624874517046006434/
+01:04:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض سياحيه لمصر | عروض رحلات مصر | باقات العطلات في مصر | باقات اجازات مصر 2022-2023' — 4 paragraph(s).
+01:04:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي مصر 7 ايام 6 ليالي - بكج سياحي القاهرة' — 10 paragraph(s).
+01:04:58 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://yenitrip.net/honeymoon-in-spain-2/
+01:05:11 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض رحلات شهر العسل داخل مصر بأفضل الاسعار 2026 - ترافل يلا' — 11 paragraph(s).
+01:05:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر والسعودية تعززان شراكتهما الاستراتيجية بتوقيع برنامج سياحي مشترك - الأهرام العربي - Alahram Alarabi' — 7 paragraph(s).
+01:05:31 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://lelsyaha.com/travel/رحلات-اليوم-الواحد-في-مصر/
+01:05:36 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات سياحية الي مصر لمدة 8 ايام و 7 ليالي' — 6 paragraph(s).
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\yalasafir.com_global-packages_egypt-offers_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.egypttourpackages.com_ar_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.almounafies.com_ar_packages_international-tour-packages_tourism-egypt_tours-egypt.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.marsaalamtours.com_ar_عروض-سياحيه-لمصر_عروض-سياحية-الى-مصر.php.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\ar.egypttoursinfo.com_باقات-رحلات-مصر_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.egypttour-packages.com_ar_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.mytrips.travel_ar_package-details_enchanting-egypt_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.almounafies.com_ar_packages_international-tour-packages_egypt.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\contact.eg_products_travel-and-tourism.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.cibeg.com_ar_personal_cib-offers_offers_oi__D2D13587-85B1-458A-96FC-CCBEB66334E9_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\traveltalez.com_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\aseeltravels.com_packages_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.qatarairways.com_ar-eg_homepage.html.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\leaptowns.com_عروض-شركة-مصر-للسياحة_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.egypttourpackages.com_ar_أفضل-العروض-السياحية-في-مصر_عروض-مصر-الفاخرة.php.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.agazatclub.travel_.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.marsaalamtours.com_ar_Egypt-Excursions_عروض-سياحيه-لمصر.php.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.travelyalla.com_ar-eg_packages_61098-رحلات-شهر-العسل-داخل-مصر.json
+01:05:37 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\باقات_سفر_داخل_مصر_2026-04-07\www.tripsegypt.net_tour_سفرة-الي-مصر-لمدة-8-ايام-بالطيران.json
+01:05:57 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مميزات السفر داخل مصر واهم اماكن السفر | خروجات حوزو' — 0 paragraph(s).
+01:06:10 [ERROR   ] W2B.scraper.deep_scraper: Deep-scrape failed for 'https://yenitrip.net/honeymoon-in-spain-2/': Traceback (most recent call last):
+  File "C:\Users\MohamedAbdelrahman\Desktop\Programming\scrapling\W2B\scraper\deep_scraper.py", line 101, in _scrape_single_async
+    response = await session.fetch(url, network_idle=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MohamedAbdelrahman\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapling\engines\_browsers\_stealth.py", line 488, in fetch
+    first_response = await page.goto(url, referer=referer)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MohamedAbdelrahman\AppData\Local\Programs\Python\Python313\Lib\site-packages\patchright\async_api\_generated.py", line 8855, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\MohamedAbdelrahman\AppData\Local\Programs\Python\Python313\Lib\site-packages\patchright\_impl\_page.py", line 533, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MohamedAbdelrahman\AppData\Local\Programs\Python\Python313\Lib\site-packages\patchright\_impl\_frame.py", line 134, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\MohamedAbdelrahman\AppData\Local\Programs\Python\Python313\Lib\site-packages\patchright\_impl\_connection.py", line 52, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\MohamedAbdelrahman\AppData\Local\Programs\Python\Python313\Lib\site-packages\patchright\_impl\_connection.py", line 500, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+patchright._impl._errors.Error: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://yenitrip.net/honeymoon-in-spain-2/
+Call log:
+  - navigating to "https://yenitrip.net/honeymoon-in-spain-2/", waiting until "load"
 
-21:26:12 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-21:26:14 [DEBUG   ] W2B.scraper.search: ddgs library found — using DDGS backend.
-21:45:41 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/alexandria-trips
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://travelyalla.com/ar-eg/packages/42364-رحلات-الإسكندرية
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels/Alexandria-Tours
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/رحلة-الإسكندرية-من-القاهرة-رحلات/
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/1854140598066338/
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-الإسكندرية-من-القاهرة.php
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://alrahaftours.com/en/tours/alex-dayuse/
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/en/travel/flights/flights-to-alexandria-hbe
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/flights/flights-from-alexandria-hbe
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.wizzair.com/ar-ae/cheap-flights-to-alexandria
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://flights.airarabia.com/en/flights-to-alexandria
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.tripadvisor.com/Attractions-g295398-Activities-c42-Alexandria_Alexandria_Governorate.html
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/179403447436589/
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://eg.wego.com/en/schedules/hbe/alexandria-321-flight-schedules
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-الاسكندريه/رحلات-الاسكندريه.php
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.ootlah.com/ar/attractions-EGaxghbe-oth3230-one-day-trip-to-alexandria.html
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.booking.com/flights/destination/city/eg/alexandria.html
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://elgzeratours.com/رحلة-يوم-واحد-إلي-الإسكندرية/
-21:45:44 [DEBUG   ] W2B.scraper.search:   + https://www.wego.com/flights/sa/hbe/cheapest-flights-from-saudi-arabia-to-alexandria-321
-21:45:44 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
-21:46:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
-21:48:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 23 paragraph(s).
-21:55:20 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_الاسكندرية_2026-04-04
-21:55:20 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/hotels/alexandria-trips
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://travelyalla.com/ar-eg/packages/42364-رحلات-الإسكندرية
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels/Alexandria-Tours
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/رحلة-الإسكندرية-من-القاهرة-رحلات/
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/1854140598066338/
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-الإسكندرية-من-القاهرة.php
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://alrahaftours.com/en/tours/alex-dayuse/
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://www.almosafer.com/en/travel/flights/flights-to-alexandria-hbe
-21:55:22 [DEBUG   ] W2B.scraper.search:   + https://global.almosafer.com/en/travel/flights/flights-from-alexandria-hbe
-21:55:22 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 10.
-21:55:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt/Alexandria-Trips
-21:55:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/hotels/alexandria-trips
-21:55:22 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://travelyalla.com/ar-eg/packages/42364-رحلات-الإسكندرية
-21:56:30 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاسكندرية | رحلات الاسكندرية 2026 | رحلات الى الاسكندرية | حجز فنادق الاسكندرية' — 3 paragraph(s).
-21:56:30 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Egypt-Hotels/Alexandria-Tours
-21:56:31 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 23 paragraph(s).
-21:56:31 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmamsha.com/رحلة-الإسكندرية-من-القاهرة-رحلات/
-21:56:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض رحلات الإسكندرية وحجز الفنادق بافضل الاسعار - ترافل يلا' — 6 paragraph(s).
-21:56:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/groups/1854140598066338/
-21:56:35 [INFO    ] W2B.scraper.deep_scraper: Excluding Facebook group URL: https://www.facebook.com/groups/1854140598066338/
-21:56:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/رحلات-سياحية-في-القاهرة/جولات-الإسكندرية-من-القاهرة.php
-21:57:40 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاسكندرية - حجز فنادق و رحلات الاسكندرية 2025 (أفضل عروض الاسكندرية)' — 21 paragraph(s).
-21:57:40 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alrahaftours.com/en/tours/alex-dayuse/
-21:57:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلة الإسكندرية من القاهرة ضمن رحلات الإسكندرية ورحلات اليوم الواحد | الممشى لعروض السياحة والرحلات' — 3 paragraph(s).
-21:57:42 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almosafer.com/en/travel/flights/flights-to-alexandria-hbe
-21:57:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات الاسكندرية من القاهرة | رحلات إلى الإسكندرية من القاهرة' — 3 paragraph(s).
-21:57:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://global.almosafer.com/en/travel/flights/flights-from-alexandria-hbe
-21:58:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلة الاسكندرية – الرهف للسياحة' — 5 paragraph(s).
-21:58:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Book Cheap Flights From Alexandria (HBE) ✈︎ Almosafer' — 50 paragraph(s).
-21:58:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Cheap Flights to Alexandria ✈︎ (HBE), Egypt | Almosafer' — 50 paragraph(s).
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.flyingcarpetholidays.com_trips-to-egypt_Alexandria-Trips.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.tripsegypt.net_hotels_alexandria-trips.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\travelyalla.com_ar-eg_packages_42364-رحلات-الإسكندرية.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.trips-4u.net_Egypt-Hotels_Alexandria-Tours.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\elmamsha.com_رحلة-الإسكندرية-من-القاهرة-رحلات_.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.marsaalamtours.com_ar_رحلات-سياحية-في-القاهرة_جولات-الإسكندرية-من-القاهرة.php.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\alrahaftours.com_en_tours_alex-dayuse_.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\www.almosafer.com_en_travel_flights_flights-to-alexandria-hbe.json
-21:58:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_الاسكندرية_2026-04-04\global.almosafer.com_en_travel_flights_flights-from-alexandria-hbe.json
+
+01:06:10 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://bayanalyom.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:06:13 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://tawahujkhaliji.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:06:41 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'ايجار سيارات نقل سياحي وليموزين - للسياحة دوت كوم' — 26 paragraph(s).
+01:06:41 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alokaz.com/egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership/
+01:06:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07
+01:06:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/groups/237451828044710/posts/996964698760082/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar/رحلات-داخلية
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://wkendz.com/blog/view/312/عروض-شركات-سياحة-داخلية
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://ar.scoopempire.com/خروجات-وحفلات-وفعاليات-ويك-إند-في-مصر/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://vacations-time.com/ar/أسعار-رحلات-سياحية-داخل-مصر/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://brandtravel-eg.com/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Domestic-Offers
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Egypt-Hotels
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.sfari.com/forums/sfari8/travel143258-print/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/رحلات-داخلية
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://safir.travel/product-category/رحلات-سياحية-داخل-مصر/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://lelsyaha.com/travel/ويك-اند-للسياحة/
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.agazatmasr.com/domestic
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.wslny.com/companydetails/ويك-اند-للسياحة-/19444
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/tour/سفرة-الي-مصر-لمدة-8-ايام-بالطيران
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/playlist?list=PLPhpNoH5fAh_DeBR927IgH04EfqGPWzkI
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://ar.book-tour-egypt.com/s/13-alkahr-alrhlat-mn-alkahr
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.140online.com/company/C73600/ويك+اند+للسياحه
+01:06:54 [DEBUG   ] W2B.scraper.search:   + https://www.rehlatmasr.com/
+01:06:54 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+01:06:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+01:06:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/groups/237451828044710/posts/996964698760082/
+01:06:54 [INFO    ] W2B.scraper.deep_scraper: Excluding Facebook group URL: https://www.facebook.com/groups/237451828044710/posts/996964698760082/
+01:06:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar/رحلات-داخلية
+01:06:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://wkendz.com/blog/view/312/عروض-شركات-سياحة-داخلية
+01:07:18 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر والسعودية تعززان شراكتهما الاستراتيجية بتوقيع برنامج سياحي مشترك - بيان اليوم - Bayan Alyom' — 6 paragraph(s).
+01:07:19 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://ramassidetours.com/أفضل+10+باقات+سياحية+في+مصر
+01:07:21 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر والسعودية تعززان شراكتهما الاستراتيجية بتوقيع برنامج سياحي مشترك - توهج خليجي - Tawahuj Khaliji' — 8 paragraph(s).
+01:07:23 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://jinantravels.com/tours/egypt-10-days-tour-package/
+01:07:49 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'مصر والسعودية تعززان شراكتهما الاستراتيجية بتوقيع برنامج سياحي مشترك - عُكاظ - Alokaz' — 9 paragraph(s).
+01:07:50 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+01:08:07 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Week Endz | عروض شركات سياحة داخلية  | أحجز الأن' — 17 paragraph(s).
+01:08:07 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 21 paragraph(s).
+01:08:07 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://ar.scoopempire.com/خروجات-وحفلات-وفعاليات-ويك-إند-في-مصر/
+01:08:08 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://vacations-time.com/ar/أسعار-رحلات-سياحية-داخل-مصر/
+01:08:12 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+01:08:16 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://brandtravel-eg.com/
+01:08:29 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'https://ramassidetours.com/أفضل+10+باقات+سياحية+في+مصر' — 3 paragraph(s).
+01:08:36 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.marsaalamtours.com/ar/عروض-سياحيه-لمصر/باقة-رحلة-مصر-لمدة-11-يومًا.php
+01:08:39 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'جدول سياحي لمصر 10 أيام - برنامج ممتع | جنان للسفر والسياحة' — 1 paragraph(s).
+01:08:41 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://enjaztravels.com/tours/برنامج-سياحي-في-مصر-لمدة-10-أيام
+01:08:58 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '1 new message' — 21 paragraph(s).
+01:08:59 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tiktok.com/@faa.9511/photo/7601902531500969237
+01:09:24 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أسعار رحلات سياحية داخل مصر | فاكيشن تايم' — 35 paragraph(s).
+01:09:25 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Domestic-Offers
+01:09:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'محتار تروح فين في "ويك إند"؟ 10 فعاليات وحفلات مذهلة لا بد من تجربتها هيغيروا مودك! - سكوب إمباير' — 46 paragraph(s).
+01:09:29 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Egypt-Hotels
+01:09:35 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أحجز معنا أفضل رحلات السياحة الداخلية في مصر | Brandtravel' — 0 paragraph(s).
+01:09:37 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.sfari.com/forums/sfari8/travel143258-print/
+01:09:50 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي في مصر لمدة 11 يوم' — 22 paragraph(s).
+01:09:51 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tiktok.com/@yallanshoof/video/7621639102022225172
+01:09:53 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي في مصر لمدة 10 أيام' — 16 paragraph(s).
+01:10:13 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'برنامج سياحي لمدة 4 أيام في القاهرة: اكتشف معالم مصر | TikTok' — 0 paragraph(s).
+01:10:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'سياحة داخلية | رحلات داخل مصر - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 5 paragraph(s).
+01:10:35 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/رحلات-داخلية
+01:10:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر, حجز فنادق مصر, اجازات وشهر العسل' — 13 paragraph(s).
+01:10:44 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://safir.travel/product-category/رحلات-سياحية-داخل-مصر/
+01:10:44 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'ظ…ظ†طھط¯ظ‰ ط³ظپط§ط±ظٹ ظ„ظ„ط³ظپط± ظˆ ط§ظ„ط³ظٹط§ط­ط© Database Error' — 0 paragraph(s).
+01:10:45 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://lelsyaha.com/travel/ويك-اند-للسياحة/
+01:11:02 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'TikTok - Make Your Day' — 1 paragraph(s).
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\boardingtourism.com_best-10-day-egypt-tourism-program_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\lorenatraveltourism.com_8-ايام-و7-ليالي-برنامج-سياحي-في-مصر_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\jinantravels.com_tours_egypt-3-days-tour-package_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\tourathna.com_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\www.itactravel.com_travel_برنامج-سياحي-مصر-7-ايام-6-ليالي-3_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\traveltoursarab.com_travel_برنامج-سياحي-مصر-6-ايام-5-ليالي-4_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\alahramalarabi.com_egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\it.pinterest.com_pin_624874517046006434_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\lelsyaha.com_travel_رحلات-اليوم-الواحد-في-مصر_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\bayanalyom.com_egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\tawahujkhaliji.com_egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\alokaz.com_egypt-and-saudi-arabia-strengthen-strategic-tourism-partnership_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\ramassidetours.com_أفضل_10_باقات_سياحية_في_مصر.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\jinantravels.com_tours_egypt-10-days-tour-package_.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\www.marsaalamtours.com_ar_عروض-سياحيه-لمصر_باقة-رحلة-مصر-لمدة-11-يوم_ا.php.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\enjaztravels.com_tours_برنامج-سياحي-في-مصر-لمدة-10-أيام.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\www.tiktok.com__faa.9511_photo_7601902531500969237.json
+01:11:03 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\برنامج_سياحي_داخل_مصر_2026-04-07\www.tiktok.com__yallanshoof_video_7621639102022225172.json
+01:11:49 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+01:11:50 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatmasr.com/domestic
+01:11:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07
+01:11:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt/One-Day-Trip
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://waditours-egypt.com/ar
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://alrahaftours.com/product-category/رحلات-يوم-واحد/
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.getyourguide.com/ar-eg/taal-volcano-l104067/day-trips-tc172/
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.tiktok.com/@mashaweer22/video/7182231910947540230
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.almasryalyoum.com/news/details/2608427
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://xn--mgbbh0a2b4do.com/hotels/?product_cat=100300&doing_wp_cron=1773268963.6434159278869628906250
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.agazatmasr.com/egypt-day-trips
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.ootlah.com/ar/EG-things-to-do-cairo-governorate-cairo-day-trips.html
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.agazatclub.travel/day-trips/
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.waditours-egypt.com/ar/رحلات-سياحية-داخل-مصر-ليوم-الواحد/رحلات-يوم-واحد-داخل-القاهرة
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/رحلات-اليوم-الواحد-من-القاهرة/
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Day-Tours/Cairo
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/61187-رحلات-اليوم-الواحد
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/one-day-trips/cairo-day-tours
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://sffar.com/برنامج-رحلات-اليوم-الواحد-داخل-القاهر/
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://www.facebook.com/shikotours/?locale=ar_AR
+01:11:53 [DEBUG   ] W2B.scraper.search:   + https://holidays.goextours.com/city/dayuse/
+01:11:53 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+01:11:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt/One-Day-Trip
+01:11:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmamsha.com/
+01:11:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://waditours-egypt.com/ar
+01:11:55 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'التصنيف: رحلات سياحية داخل مصر - سفير للسياحة' — 2 paragraph(s).
+01:11:56 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'ويك اند للسياحة - للسياحة دوت كوم' — 5 paragraph(s).
+01:11:56 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.wslny.com/companydetails/ويك-اند-للسياحة-/19444
+01:12:01 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/tour/سفرة-الي-مصر-لمدة-8-ايام-بالطيران
+01:13:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد | رحلات يوم واحد | عروض اليوم الواحد' — 15 paragraph(s).
+01:13:09 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alrahaftours.com/product-category/رحلات-يوم-واحد/
+01:13:10 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الفنادق – اجازات مصر' — 14 paragraph(s).
+01:13:11 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'وصلني || ويك اند للسياحة  || سياحة وسفر || 19 أ عمارات العبور -  مدينة نصر, القاهرة  ||  ||  ||' — 1 paragraph(s).
+01:13:13 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youtube.com/playlist?list=PLPhpNoH5fAh_DeBR927IgH04EfqGPWzkI
+01:13:15 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://ar.book-tour-egypt.com/s/13-alkahr-alrhlat-mn-alkahr
+01:13:16 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أفضل عروض سياحة ورحلات داخلية في مصر | الممشى لعروض السياحة والرحلات' — 4 paragraph(s).
+01:13:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.getyourguide.com/ar-eg/taal-volcano-l104067/day-trips-tc172/
+01:13:19 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات سياحية الي مصر لمدة 8 ايام و 7 ليالي' — 6 paragraph(s).
+01:13:39 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.140online.com/company/C73600/ويك+اند+للسياحه
+01:14:20 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الرحلات - الرهف للسياحة' — 0 paragraph(s).
+01:14:20 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tiktok.com/@mashaweer22/video/7182231910947540230
+01:14:32 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات القاهرة والجولات والمعالم السياحية بالقاهرة' — 0 paragraph(s).
+01:14:33 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.rehlatmasr.com/
+01:14:37 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'ويك اند القاهرة - YouTube' — 0 paragraph(s).
+01:14:40 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Day Trips from Taal Volcano | GetYourGuide' — 4 paragraph(s).
+01:14:41 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.almasryalyoum.com/news/details/2608427
+01:14:41 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الوادي للسياحة - أفضل عروض حجز فنادق مصر , اسعار تذاكر طيران, وايجار السيارات' — 6 paragraph(s).
+01:14:41 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://xn--mgbbh0a2b4do.com/hotels/?product_cat=100300&doing_wp_cron=1773268963.6434159278869628906250
+01:14:46 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '404 - File or directory not found.' — 0 paragraph(s).
+01:15:24 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات يوم واحد ممتعة في القاهرة | TikTok' — 0 paragraph(s).
+01:15:25 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatmasr.com/egypt-day-trips
+01:15:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات مصر - Rehlat Masr' — 20 paragraph(s).
+01:15:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'دليل خدماتى المصري اليوم | المصري اليوم' — 50 paragraph(s).
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.travelyalla.com_ar_رحلات-داخلية.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\wkendz.com_blog_view_312_عروض-شركات-سياحة-داخلية.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\ar.scoopempire.com_خروجات-وحفلات-وفعاليات-ويك-إند-في-مصر_.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\vacations-time.com_ar_أسعار-رحلات-سياحية-داخل-مصر_.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\brandtravel-eg.com_.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\skyegtours.com_eg_ar_Domestic-Offers.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.trips-4u.net_Egypt-Hotels.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.sfari.com_forums_sfari8_travel143258-print_.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.travelyalla.com_ar-eg_رحلات-داخلية.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\safir.travel_product-category_رحلات-سياحية-داخل-مصر_.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\lelsyaha.com_travel_ويك-اند-للسياحة_.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.agazatmasr.com_domestic.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.wslny.com_companydetails_ويك-اند-للسياحة-_19444.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.tripsegypt.net_tour_سفرة-الي-مصر-لمدة-8-ايام-بالطيران.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.youtube.com_playlist_list_PLPhpNoH5fAh_DeBR927IgH04EfqGPWzkI.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\ar.book-tour-egypt.com_s_13-alkahr-alrhlat-mn-alkahr.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.140online.com_company_C73600_ويك_اند_للسياحه.json
+01:15:53 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_ويك_اند_داخل_مصر_2026-04-07\www.rehlatmasr.com_.json
+01:15:53 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.ootlah.com/ar/EG-things-to-do-cairo-governorate-cairo-day-trips.html
+01:16:00 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات سفاري – فندقة' — 2 paragraph(s).
+01:16:00 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+01:16:40 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الرحلات – اجازات مصر' — 9 paragraph(s).
+01:16:40 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatclub.travel/day-trips/
+01:16:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_عائلية_داخل_مصر_2026-04-07
+01:16:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/trips-to-egypt
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://sallamlimo.com/رحلات-سياحية-داخل-مصر/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://alqahtanitours.com/رحلات-العائلات-في-مصر-برامج-سياحية-مري/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://mashrektours.com/trip-types/الرحلات-داخل-مصر/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar/رحلات-داخلية
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.youtube.com/watch?v=PrhzYt9U1tQ
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.agazatclub.travel/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://elmamsha.com/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.regencyholidays.com/packages/باقات-جولة-عائلية-في-مصر/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://go-bus.com/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://rentbusegypt.com/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://trips-4u.net/Honeymoon-Tours
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.supermama.me/posts/7-رحلات-شتوية-في-إجازة-نصف-العام
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://yallabook.com/offer/ليالي-القاهره/رحلات-عائلية-لي-مصر-163
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://alrahhal.net/تجربة-شخصية-رحلتي-إلى-واحة-الداخلة/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/tour/سفرة-الي-مصر-لمدة-8-ايام-بالطيران
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://skylifeholidays.com/ba_types/family/
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://wegzz.com/location/رحلات-عائلية
+01:16:54 [DEBUG   ] W2B.scraper.search:   + https://safir.travel/product-category/رحلات-سياحية-داخل-مصر/
+01:16:54 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+01:16:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/
+01:16:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.flyingcarpetholidays.com/trips-to-egypt
+01:16:54 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sallamlimo.com/رحلات-سياحية-داخل-مصر/
+01:17:04 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'استمتع بالرحلات اليومية في القاهرة | احجز جولتك في القاهرة' — 19 paragraph(s).
+01:17:08 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر | رحلات سياحية | عروض شركات السياحة' — 21 paragraph(s).
+01:17:14 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.waditours-egypt.com/ar/رحلات-سياحية-داخل-مصر-ليوم-الواحد/رحلات-يوم-واحد-داخل-القاهرة
+01:17:16 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://agazatmasr.com/رحلات-اليوم-الواحد-من-القاهرة/
+01:17:49 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد - اجازات كلوب' — 10 paragraph(s).
+01:17:50 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Day-Tours/Cairo
+01:18:07 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخل مصر | رحلات سياحية | عروض شركات السياحة' — 21 paragraph(s).
+01:18:07 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alqahtanitours.com/رحلات-العائلات-في-مصر-برامج-سياحية-مري/
+01:18:10 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'تجربة رحلات سياحية داخل مصر مع شركة سلام ليموزين' — 50 paragraph(s).
+01:18:11 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://mashrektours.com/trip-types/الرحلات-داخل-مصر/
+01:18:12 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'اجازات مصر – موقع لحجز الفنادق والرحلات داخل وخارج مصر' — 8 paragraph(s).
+01:18:13 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar/رحلات-داخلية
+01:18:31 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أفضل رحلات اليوم الواحد من القاهرة: اكتشف الوجهات القريبة والمميزة – اجازات مصر' — 37 paragraph(s).
+01:18:32 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/packages/61187-رحلات-اليوم-الواحد
+01:19:03 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد القاهرة' — 8 paragraph(s).
+01:19:04 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/one-day-trips/cairo-day-tours
+01:19:16 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات العائلات في مصر | برامج سياحية مريحة وممتعة - القحطاني' — 7 paragraph(s).
+01:19:16 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات يوم واحد داخل القاهرة' — 1 paragraph(s).
+01:19:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.youtube.com/watch?v=PrhzYt9U1tQ
+01:19:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://sffar.com/برنامج-رحلات-اليوم-الواحد-داخل-القاهر/
+01:19:23 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Certificate verification problem detected' — 6 paragraph(s).
+01:19:24 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.facebook.com/shikotours/?locale=ar_AR
+01:19:26 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات داخلية - ترافل يلا' — 5 paragraph(s).
+01:19:28 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.agazatclub.travel/
+01:19:29 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'الرحلات داخل مصر فضل فنادق ومنتجعات بأسعار تنافسية . المشرق للسياحة - Al Mashrek Tours' — 5 paragraph(s).
+01:19:40 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elmamsha.com/
+01:19:43 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد 2026 بافضل الاسعار - ترافل يلا' — 12 paragraph(s).
+01:19:46 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://holidays.goextours.com/city/dayuse/
+01:20:14 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد في القاهرة' — 2 paragraph(s).
+01:20:29 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلتنا العائلية إلى مصر 🇪🇬 | أكثر فلوق استمتعنا فيه  - YouTube' — 0 paragraph(s).
+01:20:30 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.regencyholidays.com/packages/باقات-جولة-عائلية-في-مصر/
+01:20:34 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات اليوم الواحد ببلاش | Cairo  | Facebook' — 0 paragraph(s).
+01:20:43 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أجازات كلوب: حجز فنادق | رحلات الغردقة | رحلات شرم الشيخ | رحلات شهر عسل | رحلات خارج مصر' — 7 paragraph(s).
+01:20:43 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://go-bus.com/
+01:20:51 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'أفضل عروض سياحة ورحلات داخلية في مصر | الممشى لعروض السياحة والرحلات' — 4 paragraph(s).
+01:20:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://rentbusegypt.com/
+01:20:52 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'Attention Required! | Cloudflare' — 3 paragraph(s).
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt_One-Day-Trip.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\elmamsha.com_.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\waditours-egypt.com_ar.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\alrahaftours.com_product-category_رحلات-يوم-واحد_.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.getyourguide.com_ar-eg_taal-volcano-l104067_day-trips-tc172_.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.tiktok.com__mashaweer22_video_7182231910947540230.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.almasryalyoum.com_news_details_2608427.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\xn--mgbbh0a2b4do.com_hotels__product_cat_100300_doing_wp_cron_1773268963.6434159278869628906250.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.agazatmasr.com_egypt-day-trips.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.ootlah.com_ar_EG-things-to-do-cairo-governorate-cairo-day-trips.html.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.flyingcarpetholidays.com_trips-to-egypt.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.agazatclub.travel_day-trips_.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.waditours-egypt.com_ar_رحلات-سياحية-داخل-مصر-ليوم-الواحد_رحلات-يوم-واحد-داخل-القاهرة.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\agazatmasr.com_رحلات-اليوم-الواحد-من-القاهرة_.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.trips-4u.net_Day-Tours_Cairo.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.travelyalla.com_ar-eg_packages_61187-رحلات-اليوم-الواحد.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.tripsegypt.net_one-day-trips_cairo-day-tours.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\sffar.com_برنامج-رحلات-اليوم-الواحد-داخل-القاهر_.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\www.facebook.com_shikotours__locale_ar_AR.json
+01:20:54 [DEBUG   ] W2B.scraper.exporters: JSON saved → scraped_results\رحلات_يوم_واحد_داخل_مصر_2026-04-07\holidays.goextours.com_city_dayuse_.json
+01:21:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'باقات جولة عائلية في مصر، إجازة عائلية في مصر - Regencyholidays.com' — 29 paragraph(s).
+01:21:42 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://trips-4u.net/Honeymoon-Tours
+01:21:51 [INFO    ] W2B.app.services.scraper_service: Starting pipeline in: scraped_results\رحلات_شهر_العسل_داخل_مصر_2026-04-07
+01:21:51 [INFO    ] W2B.scraper.search: Using DDGS backend (ddgs library).
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://skyegtours.com/eg/ar/Honeymoon-Offers
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://elgzeratours.com/رحلات-شهر-العسل-داخل-مصر/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-EG/packages/61098-رحلات-شهر-العسل-داخل-مصر
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.egypttour-packages.com/ar/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://maxim-tours.com/ar/product-category/رحلات-شهر-العسل/داخل-مصر/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://mike-travel.com/tours/honeymoon-regency/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.worldtouradvice.com/ar/رحلات_شهر_العسل_داخل_مصر.html
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.travelyalla.com/ar-eg/packages/61098-رحلات-شهر-العسل-داخل-مصر
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.trips-4u.net/Honeymoon-Tours
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.skyegtours.com/شهر-العسل-داخل-و-خارج-مصر
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.agazatmasr.com/honeymoon-egypt
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.travelwaffar.com/ar-honeymoon
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.zeus-eg.com/honeymoon
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.agazatclub.travel/honeymoons/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.tripsegypt.net/honeymoon-trips/honey-trips-sharm-sheikh
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://classyegytours.com/عروض-رحلات-شهر-العسل/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://agazatmasr.com/tour/رحلات-شهر-العسل-دهب/
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.flyingcarpetholidays.com/Hot-Deals/Honeymoon-Packages
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://www.freedaysegypt.com/offers/honeymoon.php
+01:21:52 [DEBUG   ] W2B.scraper.search:   + https://30day-eg.com/allinfo/216/فندق-صن-رايز-أكوا-جوي-Sunrise-Aqua-Joy-Resort/الغردقة/رحلات-شهر-عسل-مصر
+01:21:52 [INFO    ] W2B.scraper.search: DDGS search complete. Total results: 20.
+01:21:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skyegtours.com/eg/ar/Honeymoon-Offers
+01:21:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://elgzeratours.com/رحلات-شهر-العسل-داخل-مصر/
+01:21:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-EG/packages/61098-رحلات-شهر-العسل-داخل-مصر
+01:21:58 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'جوباص | موقع حجز أتوبيسات السفر داخل مصر' — 1 paragraph(s).
+01:22:03 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'ايجار اتوبيس - افضل شركة تأجير حافلات في مصر' — 19 paragraph(s).
+01:22:10 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.supermama.me/posts/7-رحلات-شتوية-في-إجازة-نصف-العام
+01:22:10 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://yallabook.com/offer/ليالي-القاهره/رحلات-عائلية-لي-مصر-163
+01:22:51 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شهر العسل داخل مصر' — 9 paragraph(s).
+01:22:52 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://alrahhal.net/تجربة-شخصية-رحلتي-إلى-واحة-الداخلة/
+01:23:02 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض شهر عسل | رحلات شهر عسل داخل و خارج مصر  - سكاي ايجيبت للسياحة | رحلات - تذاكر طيران' — 29 paragraph(s).
+01:23:04 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.egypttour-packages.com/ar/
+01:23:08 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شهر العسل داخل مصر: أفضل 5 أماكن لقضاء شهر عسل مميز - الجزيرة جروب للسياحة والسفر' — 47 paragraph(s).
+01:23:08 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://maxim-tours.com/ar/product-category/رحلات-شهر-العسل/داخل-مصر/
+01:23:09 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض رحلات شهر العسل داخل مصر بأفضل الاسعار 2026 - ترافل يلا' — 11 paragraph(s).
+01:23:12 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://mike-travel.com/tours/honeymoon-regency/
+01:23:18 [DEBUG   ] W2B.scraper.deep_scraper: Scraped '7 رحلات شتوية في إجازة نصف العام | سوبر ماما' — 16 paragraph(s).
+01:23:23 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات عائلية لي مصر — Yallabook.com' — 3 paragraph(s).
+01:23:28 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.tripsegypt.net/tour/سفرة-الي-مصر-لمدة-8-ايام-بالطيران
+01:23:29 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://skylifeholidays.com/ba_types/family/
+01:24:00 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'تجربة شخصية: رحلتي إلى واحة الداخلة | موقع الرحّال' — 31 paragraph(s).
+01:24:02 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://wegzz.com/location/رحلات-عائلية
+01:24:17 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات مصر | باقات السفر المصرية' — 13 paragraph(s).
+01:24:17 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.worldtouradvice.com/ar/رحلات_شهر_العسل_داخل_مصر.html
+01:24:25 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'داخل مصر - Maxim Tours' — 3 paragraph(s).
+01:24:26 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.travelyalla.com/ar-eg/packages/61098-رحلات-شهر-العسل-داخل-مصر
+01:24:27 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلة شهر العسل شرم الشيخ فندق ريجينسى بلازا اكوا بارك ***** نجوم 4ليالى / 5 أيام - شركة مايك للسياحة' — 6 paragraph(s).
+01:24:29 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.trips-4u.net/Honeymoon-Tours
+01:24:42 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات سياحية الي مصر لمدة 8 ايام و 7 ليالي' — 6 paragraph(s).
+01:24:42 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://safir.travel/product-category/رحلات-سياحية-داخل-مصر/
+01:24:48 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'عروض رحلات وجهات عائلية مميزة | Sky Life Holidays - سكاي لايف للعطلات' — 3 paragraph(s).
+01:25:14 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات عائلية رخيصة | بكجات سفر عائلية | رحلة عائلية | وجهات سفر عائلية رخيصة' — 5 paragraph(s).
+01:25:29 [DEBUG   ] W2B.scraper.deep_scraper: Scraped 'رحلات شهر العسل داخل مصر و اختيارات مختلفه' — 2 paragraph(s).
+01:25:30 [DEBUG   ] W2B.scraper.deep_scraper: Starting deep scrape: https://www.skyegtours.com/شهر-العسل-داخل-و-خارج-مصر
