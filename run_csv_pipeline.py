@@ -14,7 +14,7 @@ import requests
 
 DEFAULT_CSV_PATH = Path("egypt_travel_keywords_ar_en_offers_prices.csv")
 DEFAULT_API_URL = "http://127.0.0.1:8000/api/v1/pipeline"
-DEFAULT_OUTPUT_DIR = Path("logs")
+DEFAULT_OUTPUT_DIR = Path(f"logs_{datetime.now().strftime('%Y-%m-%d')}")
 
 
 def configure_stdio() -> None:

@@ -16,13 +16,14 @@ from __future__ import annotations
 
 import logging
 import sys
+from datetime import datetime
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-_LOG_DIR = Path("logs")
+_LOG_DIR = Path(f"logs_{datetime.now().strftime('%Y-%m-%d')}")
 _LOG_FILE = _LOG_DIR / "w2b_scraper.log"
 _MAX_BYTES = 5 * 1024 * 1024   # 5 MB per file
 _BACKUP_COUNT = 3

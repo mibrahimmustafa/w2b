@@ -22,7 +22,7 @@ from pathlib import Path
 _DEFAULT_MAX_PAGES: int = 5
 _DEFAULT_TIMEOUT: int = 25           # seconds — HTTP requests
 _DEFAULT_REQUEST_DELAY: float = 1.5  # seconds — polite crawl delay
-_DEFAULT_OUTPUT_DIR: Path = Path("scraped_results")
+_DEFAULT_OUTPUT_DIR: Path = Path(f"scraped_results_{datetime.now().strftime('%Y-%m-%d')}")
 
 # Public — safe to import from other modules
 DEFAULT_USER_AGENT: str = (

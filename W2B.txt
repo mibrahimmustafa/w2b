@@ -44,3 +44,16 @@ Value-Prop:
 
 Actions:
 	- Mansour - initial list of social media profiles to scrab (Top 100 examples of hand picked agencies)
+
+
+
+cd /home/w2b/w2b
+nohup bash -c '
+    source ./venv/bin/activate
+    echo "=== Starting Python scripts at $(date) ===" 
+    python3 start_all.py >> app.log 2>&1 &
+    sleep 5
+    python3 run_csv_pipeline.py >> app.log 2>&1
+' > app.log 2>&1 &
+
+tail -f app.log

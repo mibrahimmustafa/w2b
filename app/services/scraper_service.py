@@ -19,7 +19,10 @@ logger = get_logger(__name__)
 class ScraperService:
     """Handles high-level scraping operations asynchronously."""
 
-    def __init__(self, output_dir: str = "scraped_results"):
+    def __init__(self, output_dir: Optional[str] = None):
+        if output_dir is None:
+            date_str = datetime.now().strftime("%Y-%m-%d")
+            output_dir = f"scraped_results_{date_str}"
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.deep_scraper = DeepScraper()

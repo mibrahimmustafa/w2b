@@ -82,7 +82,7 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "-o", "--output-dir",
         metavar="DIR",
         type=Path,
-        default=Path("scraped_results"),
+        default=Path(f"scraped_results_{datetime.now().strftime('%Y-%m-%d')}"),
         help="Directory where all output files will be written.",
     )
     parser.add_argument(
@@ -185,7 +185,7 @@ def main() -> None:
         max_pages=args.pages,
     )
     # If the user provided an explicit output-dir via CLI, override the dynamic one
-    if args.output_dir != Path("scraped_results"):
+    if args.output_dir != Path(f"scraped_results_{datetime.now().strftime('%Y-%m-%d')}"):
         config.output_dir = args.output_dir
     
     config.validate()
