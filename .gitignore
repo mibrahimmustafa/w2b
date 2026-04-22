@@ -3,3 +3,5 @@ scraped_results/*
 __pycache__/*
 .env
 __pycache__
+scraped_results*/*
+logs_*/*

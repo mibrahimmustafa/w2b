@@ -11,6 +11,8 @@ def run_scraper_system():
     backend_script = os.path.join(current_dir, "app", "main.py")
     frontend_dir = os.path.join(current_dir, "frontend")
     
+    vector_db_script = os.path.join(current_dir, "vectorDB_API", "main.py")
+    
     # 1. Start Backend
     print("📦 Starting FastAPI Backend (Port 8000)...")
     env = os.environ.copy()
@@ -18,7 +20,13 @@ def run_scraper_system():
     backend_proc = subprocess.Popen([sys.executable, backend_script], env=env)
     
     # Wait for backend to start
-    time.sleep(3)
+    time.sleep(2)
+
+    # 1.5 Start Vector DB API
+    print("🧠 Starting Vector DB API (Port 8001)...")
+    vectordb_proc = subprocess.Popen([sys.executable, vector_db_script], env=env)
+    
+    time.sleep(2)
     
     # 2. Start Frontend
     print("🎨 Starting Next.js Frontend (Port 3000)...")
@@ -27,12 +35,14 @@ def run_scraper_system():
     except FileNotFoundError:
         print("❌ Error: 'npm' not found. Please ensure Node.js is installed.")
         backend_proc.terminate()
+        vectordb_proc.terminate()
         return
 
     print("\n✅ System Running!")
     print("👉 Dashboard: http://localhost:3000")
-    print("👉 API Docs:  http://localhost:8000/docs")
-    print("\nPress Ctrl+C to stop both servers.")
+    print("👉 Scraper API Docs:  http://localhost:8000/docs")
+    print("👉 Vector DB API Docs: http://localhost:8001/docs")
+    print("\nPress Ctrl+C to stop all servers.")
     
     try:
         while True:
@@ -40,6 +50,7 @@ def run_scraper_system():
     except KeyboardInterrupt:
         print("\n🛑 Stopping servers...")
         backend_proc.terminate()
+        vectordb_proc.terminate()
         frontend_proc.terminate()
         print("Done.")
 
