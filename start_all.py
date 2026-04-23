@@ -31,7 +31,7 @@ def run_scraper_system():
     # 2. Start Frontend
     print("🎨 Starting Next.js Frontend (Port 3000)...")
     try:
-        frontend_proc = subprocess.Popen(["npm", "run", "dev"], cwd=frontend_dir, shell=True)
+        frontend_proc = subprocess.Popen("npm run dev", cwd=frontend_dir, shell=True)
     except FileNotFoundError:
         print("❌ Error: 'npm' not found. Please ensure Node.js is installed.")
         backend_proc.terminate()

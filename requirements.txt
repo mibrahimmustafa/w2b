@@ -9,6 +9,8 @@ ddgs>=7.0.0   # Official DDGS API — avoids CAPTCHA / IP blocks
 curl_cffi==0.14.0
 playwright==1.58.0
 patchright==1.58.2
+browserforge>=1.1.0
+msgspec>=0.18.6
 
 # Parsers used by BeautifulSoup and Scrapling's internal logic
 lxml==6.0.2
