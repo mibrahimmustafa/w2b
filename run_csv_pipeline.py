@@ -212,6 +212,17 @@ def main(argv: list[str] | None = None) -> int:
 
     print(f"Finished. Success: {success_count}, Failed: {failure_count}")
     print(f"Report saved to: {output_path}")
+
+    # Vector DB Auto-ingestion
+    print("\nStarting automatic ingestion into ChromaDB...")
+    try:
+        from vectorDB_API.main import ingest_daily_scraped_data
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        ingest_res = ingest_daily_scraped_data(date_str)
+        print(f"Vector DB ingestion successful! Processed {ingest_res.files_processed} files and ingested {ingest_res.chunks_ingested} chunks into chroma_db.")
+    except Exception as e:
+        print(f"Warning: Failed to ingest data into Vector DB automatically: {e}")
+
     return 0 if failure_count == 0 else 1
 
 
