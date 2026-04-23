@@ -96,6 +96,17 @@ def query_vector_db(request: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/reset")
+def reset_database():
+    """
+    Clears all data from the Vector Database.
+    """
+    success = vector_db.reset_database()
+    if success:
+        return {"message": "Database reset successfully."}
+    else:
+        raise HTTPException(status_code=500, detail="Failed to reset database.")
+
 if __name__ == "__main__":
     import uvicorn
     # Run the API locally for testing

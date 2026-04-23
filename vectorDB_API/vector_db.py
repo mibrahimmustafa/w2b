@@ -10,6 +10,7 @@ CHROMA_DATA_PATH = os.path.join(os.path.dirname(__file__), "chroma_db")
 
 class VectorDBClient:
     def __init__(self, collection_name: str = "scraped_data"):
+        self.collection_name = collection_name
         # Initialize persistent client
         self.client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
         
@@ -95,6 +96,19 @@ class VectorDBClient:
             n_results=n_results
         )
         return results
+
+    def reset_database(self):
+        """Deletes the collection and recreates it to clear all data."""
+        try:
+            self.client.delete_collection(name=self.collection_name)
+            self.collection = self.client.get_or_create_collection(
+                name=self.collection_name,
+                embedding_function=self.embedding_func
+            )
+            return True
+        except Exception as e:
+            print(f"Error resetting database: {e}")
+            return False
 
 # Singleton instance
 vector_db = VectorDBClient()
