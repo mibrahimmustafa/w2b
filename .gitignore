@@ -5,3 +5,4 @@ __pycache__/*
 __pycache__
 scraped_results*/*
 logs_*/*
+chroma_db/*
