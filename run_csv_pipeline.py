@@ -216,10 +216,16 @@ def main(argv: list[str] | None = None) -> int:
     # Vector DB Auto-ingestion
     print("\nStarting automatic ingestion into ChromaDB...")
     try:
-        from vectorDB_API.main import ingest_daily_scraped_data
+        # Call the Vector DB API instead of importing to avoid database locking issues
+        vdb_api_url = "http://127.0.0.1:8001/ingest"
         date_str = datetime.now().strftime("%Y-%m-%d")
-        ingest_res = ingest_daily_scraped_data(date_str)
-        print(f"Vector DB ingestion successful! Processed {ingest_res.files_processed} files and ingested {ingest_res.chunks_ingested} chunks into chroma_db.")
+        vdb_res = session.post(vdb_api_url, params={"date_str": date_str}, timeout=60)
+        
+        if vdb_res.ok:
+            data = vdb_res.json()
+            print(f"Vector DB ingestion successful! Processed {data.get('files_processed')} files and ingested {data.get('chunks_ingested')} chunks.")
+        else:
+            print(f"Warning: Vector DB API returned error: {vdb_res.status_code} - {vdb_res.text}")
     except Exception as e:
         print(f"Warning: Failed to ingest data into Vector DB automatically: {e}")
 

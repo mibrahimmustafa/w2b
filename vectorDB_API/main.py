@@ -30,13 +30,19 @@ def ingest_daily_scraped_data(date_str: Optional[str] = None):
         date_str = datetime.now().strftime("%Y-%m-%d")
         
     # Construct folder path
-    # Assuming W2B is the root and vectorDB_API is inside W2B
+    # Try new structure first: executions/<date>/results
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    target_folder_name = os.path.join("executions", date_str, "results")
-    target_folder_path = os.path.join(root_dir, target_folder_name)
+    target_folder_path = os.path.join(root_dir, "executions", date_str, "results")
+    
+    # Fallback to old structure: scraped_results_<date>
+    if not os.path.exists(target_folder_path):
+        target_folder_path = os.path.join(root_dir, f"scraped_results_{date_str}")
     
     if not os.path.exists(target_folder_path):
-        raise HTTPException(status_code=404, detail=f"Folder not found: {target_folder_path}")
+        raise HTTPException(
+            status_code=404, 
+            detail=f"Folder not found. Tried: 'executions/{date_str}/results' and 'scraped_results_{date_str}'"
+        )
     
     # Find all JSON files in the target folder and its subfolders
     search_pattern = os.path.join(target_folder_path, "**", "*.json")
