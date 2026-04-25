@@ -11,8 +11,11 @@ CHROMA_DATA_PATH = os.path.join(os.path.dirname(__file__), "chroma_db")
 class VectorDBClient:
     def __init__(self, collection_name: str = "scraped_data"):
         self.collection_name = collection_name
-        # Initialize persistent client
-        self.client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
+        # Initialize persistent client with reset enabled
+        self.client = chromadb.PersistentClient(
+            path=CHROMA_DATA_PATH,
+            settings=Settings(allow_reset=True)
+        )
         
         # Setup the embedding function
         self.embedding_func = embedding_functions.DefaultEmbeddingFunction()
@@ -98,9 +101,11 @@ class VectorDBClient:
         return results
 
     def reset_database(self):
-        """Deletes the collection and recreates it to clear all data."""
+        """Wipes the entire database and recreates the collection structure."""
         try:
-            self.client.delete_collection(name=self.collection_name)
+            # Use client.reset() to wipe everything (requires allow_reset=True)
+            self.client.reset()
+            # Re-initialize the collection
             self.collection = self.client.get_or_create_collection(
                 name=self.collection_name,
                 embedding_function=self.embedding_func
@@ -108,7 +113,17 @@ class VectorDBClient:
             return True
         except Exception as e:
             print(f"Error resetting database: {e}")
-            return False
+            # Fallback to just deleting the collection if reset fails
+            try:
+                self.client.delete_collection(name=self.collection_name)
+                self.collection = self.client.get_or_create_collection(
+                    name=self.collection_name,
+                    embedding_function=self.embedding_func
+                )
+                return True
+            except Exception as e2:
+                print(f"Fallback reset also failed: {e2}")
+                return False
 
 # Singleton instance
 vector_db = VectorDBClient()

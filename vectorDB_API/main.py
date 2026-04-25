@@ -32,7 +32,7 @@ def ingest_daily_scraped_data(date_str: Optional[str] = None):
     # Construct folder path
     # Assuming W2B is the root and vectorDB_API is inside W2B
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    target_folder_name = f"scraped_results_{date_str}"
+    target_folder_name = os.path.join("executions", date_str, "results")
     target_folder_path = os.path.join(root_dir, target_folder_name)
     
     if not os.path.exists(target_folder_path):

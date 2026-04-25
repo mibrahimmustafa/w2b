@@ -25,6 +25,7 @@ import asyncio
 import argparse
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 
 if sys.platform == 'win32':
@@ -82,7 +83,7 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "-o", "--output-dir",
         metavar="DIR",
         type=Path,
-        default=Path(f"scraped_results_{datetime.now().strftime('%Y-%m-%d')}"),
+        default=Path("executions") / datetime.now().strftime("%Y-%m-%d") / "results",
         help="Directory where all output files will be written.",
     )
     parser.add_argument(
@@ -185,7 +186,8 @@ def main() -> None:
         max_pages=args.pages,
     )
     # If the user provided an explicit output-dir via CLI, override the dynamic one
-    if args.output_dir != Path(f"scraped_results_{datetime.now().strftime('%Y-%m-%d')}"):
+    default_dir = Path("executions") / datetime.now().strftime("%Y-%m-%d") / "results"
+    if args.output_dir != default_dir:
         config.output_dir = args.output_dir
     
     config.validate()
