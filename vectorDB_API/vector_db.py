@@ -41,30 +41,45 @@ class VectorDBClient:
             paragraphs = data.get("paragraphs", [])
             headings = data.get("headings", {})
             
+            # --- Enriched Description Fallback ---
+            # Compile the actual content to serve as the "full details" description 
+            # so the user always sees the comprehensive details when querying.
+            details_parts = []
+            if description:
+                details_parts.append(description)
+            for p in paragraphs:
+                if len(p.strip()) > 20:
+                    details_parts.append(p.strip())
+                    
+            enriched_description = "\n".join(details_parts)
+            # Limit description size slightly if it's too huge, to prevent ChromaDB metadata limits
+            if len(enriched_description) > 5000:
+                enriched_description = enriched_description[:5000] + "..."
+                
             all_text_chunks = []
             
             # Create a context header using title and description for better semantic search
             context_header = ""
-            if title or description:
-                context_header = f"Title: {title}\nDescription: {description}\n---\n"
+            if title or enriched_description:
+                context_header = f"Title: {title}\nDescription: {enriched_description[:500]}\n---\n"
                 # Add the standalone meta chunk as well
                 all_text_chunks.append({
-                    "text": f"Title: {title}\nDescription: {description}",
-                    "meta": {"url": url, "source": file_path, "type": "meta", "description": description}
+                    "text": f"Title: {title}\nDescription: {enriched_description[:1000]}",
+                    "meta": {"url": url, "source": file_path, "type": "meta", "description": enriched_description}
                 })
             
             # Combine headings and paragraphs with context header
             for h1 in headings.get("h1", []):
                 all_text_chunks.append({
                     "text": f"{context_header}Heading: {h1}",
-                    "meta": {"url": url, "source": file_path, "type": "h1", "description": description}
+                    "meta": {"url": url, "source": file_path, "type": "h1", "description": enriched_description}
                 })
             
             for p in paragraphs:
                 if len(p.strip()) > 20: # ignore very short/empty paragraphs
                     all_text_chunks.append({
                         "text": f"{context_header}Content: {p}",
-                        "meta": {"url": url, "source": file_path, "type": "paragraph", "description": description}
+                        "meta": {"url": url, "source": file_path, "type": "paragraph", "description": enriched_description}
                     })
                     
             return all_text_chunks
