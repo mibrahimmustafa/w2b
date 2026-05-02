@@ -102,6 +102,52 @@ def query_vector_db(request: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/query_descriptions")
+def query_vector_db_descriptions(request: QueryRequest):
+    """
+    Query the Vector Database using RAG context, returning descriptions instead of links.
+    """
+    try:
+        results = vector_db.query_data(query_text=request.query, n_results=request.n_results)
+        
+        # Format results for easier consumption
+        formatted_results = []
+        if results and results.get("documents") and len(results["documents"][0]) > 0:
+            documents = results["documents"][0]
+            metadatas = results["metadatas"][0]
+            distances = results["distances"][0]
+            
+            import json
+            import os
+            for doc, meta, dist in zip(documents, metadatas, distances):
+                description = ""
+                source_file = meta.get("source", "")
+                if source_file and os.path.exists(source_file):
+                    try:
+                        with open(source_file, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                            description = data.get("metadata", {}).get("description", "")
+                    except Exception:
+                        pass
+                
+                new_meta = meta.copy()
+                if "url" in new_meta:
+                    del new_meta["url"]
+                new_meta["description"] = description
+                
+                formatted_results.append({
+                    "text": doc,
+                    "metadata": new_meta,
+                    "distance": dist
+                })
+                
+        return {
+            "query": request.query,
+            "results": formatted_results
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.post("/reset")
 def reset_database():
     """
