@@ -20,12 +20,18 @@ class ScraperService:
     """Handles high-level scraping operations asynchronously."""
 
     def __init__(self, output_dir: Optional[str] = None):
-        if output_dir is None:
-            date_str = datetime.now().strftime("%Y-%m-%d")
-            output_dir = f"executions/{date_str}/results"
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self._custom_output_dir = output_dir
         self.deep_scraper = DeepScraper()
+
+    @property
+    def output_dir(self) -> Path:
+        if self._custom_output_dir:
+            path = Path(self._custom_output_dir)
+        else:
+            date_str = datetime.now().strftime("%Y-%m-%d")
+            path = Path(f"executions/{date_str}/results")
+        path.mkdir(parents=True, exist_ok=True)
+        return path
 
     async def search(self, query: str, max_pages: int = 5) -> List[SearchResult]:
         """Run DuckDuckGo discovery phase."""

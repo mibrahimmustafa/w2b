@@ -22,8 +22,10 @@ from pathlib import Path
 _DEFAULT_MAX_PAGES: int = 5
 _DEFAULT_TIMEOUT: int = 25           # seconds — HTTP requests
 _DEFAULT_REQUEST_DELAY: float = 1.5  # seconds — polite crawl delay
-_DATE_STR: str = datetime.now().strftime('%Y-%m-%d')
-_DEFAULT_OUTPUT_DIR: Path = Path("executions") / _DATE_STR / "results"
+
+def get_default_output_dir() -> Path:
+    date_str = datetime.now().strftime('%Y-%m-%d')
+    return Path("executions") / date_str / "results"
 
 # Public — safe to import from other modules
 DEFAULT_USER_AGENT: str = (
@@ -53,14 +55,14 @@ class ScraperConfig:
 
     query: str = ""
     max_pages: int = _DEFAULT_MAX_PAGES
-    output_dir: Path = field(default_factory=lambda: _DEFAULT_OUTPUT_DIR)
+    output_dir: Path = field(default_factory=get_default_output_dir)
     timeout: int = _DEFAULT_TIMEOUT
     request_delay: float = _DEFAULT_REQUEST_DELAY
     user_agent: str = DEFAULT_USER_AGENT
 
     def __post_init__(self) -> None:
         # If no explicit output_dir is given, generate a dynamic one
-        if self.output_dir == _DEFAULT_OUTPUT_DIR and self.query:
+        if self.output_dir == get_default_output_dir() and self.query:
             self.output_dir = self.get_dynamic_output_dir()
             
         # Coerce str → Path in case the caller passed a plain string
@@ -76,7 +78,7 @@ class ScraperConfig:
         slug = self._slugify(self.query)
         date_str = datetime.now().strftime("%Y-%m-%d")
         folder_name = f"{slug}_{date_str}"
-        return _DEFAULT_OUTPUT_DIR / folder_name
+        return get_default_output_dir() / folder_name
 
     @staticmethod
     def _slugify(text: str) -> str:
