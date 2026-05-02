@@ -117,24 +117,15 @@ def query_vector_db_descriptions(request: QueryRequest):
             metadatas = results["metadatas"][0]
             distances = results["distances"][0]
             
-            import json
-            import os
             for doc, meta, dist in zip(documents, metadatas, distances):
-                description = ""
-                source_file = meta.get("source", "")
-                if source_file and os.path.exists(source_file):
-                    try:
-                        with open(source_file, 'r', encoding='utf-8') as f:
-                            data = json.load(f)
-                            description = data.get("metadata", {}).get("description", "")
-                    except Exception:
-                        pass
-                
                 new_meta = meta.copy()
                 if "url" in new_meta:
                     del new_meta["url"]
-                new_meta["description"] = description
                 
+                # The description is now directly stored in the metadata from the Vector DB
+                if "description" not in new_meta:
+                    new_meta["description"] = ""
+                    
                 formatted_results.append({
                     "text": doc,
                     "metadata": new_meta,

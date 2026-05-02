@@ -43,27 +43,28 @@ class VectorDBClient:
             
             all_text_chunks = []
             
-            # Chunking logic (very basic chunking for RAG)
-            # Combine title + description as the first chunk
+            # Create a context header using title and description for better semantic search
+            context_header = ""
             if title or description:
-                chunk = f"Title: {title}\nDescription: {description}"
+                context_header = f"Title: {title}\nDescription: {description}\n---\n"
+                # Add the standalone meta chunk as well
                 all_text_chunks.append({
-                    "text": chunk,
-                    "meta": {"url": url, "source": file_path, "type": "meta"}
+                    "text": f"Title: {title}\nDescription: {description}",
+                    "meta": {"url": url, "source": file_path, "type": "meta", "description": description}
                 })
             
-            # Combine headings and paragraphs
+            # Combine headings and paragraphs with context header
             for h1 in headings.get("h1", []):
                 all_text_chunks.append({
-                    "text": f"Heading: {h1}",
-                    "meta": {"url": url, "source": file_path, "type": "h1"}
+                    "text": f"{context_header}Heading: {h1}",
+                    "meta": {"url": url, "source": file_path, "type": "h1", "description": description}
                 })
             
             for p in paragraphs:
                 if len(p.strip()) > 20: # ignore very short/empty paragraphs
                     all_text_chunks.append({
-                        "text": p,
-                        "meta": {"url": url, "source": file_path, "type": "paragraph"}
+                        "text": f"{context_header}Content: {p}",
+                        "meta": {"url": url, "source": file_path, "type": "paragraph", "description": description}
                     })
                     
             return all_text_chunks
