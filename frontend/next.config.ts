@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["46.202.155.132", "192.168.56.1", "localhost:3000"],
   // To silence the Turbopack root warning
   serverExternalPackages: [], 
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;
