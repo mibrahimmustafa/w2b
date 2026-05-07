@@ -2,6 +2,7 @@ import subprocess
 import time
 import sys
 import os
+import webbrowser
 
 def run_scraper_system():
     print("🚀 W2B Scraper: Launching Full System...")
@@ -43,6 +44,10 @@ def run_scraper_system():
     print("👉 Scraper API Docs:  http://localhost:8000/docs")
     print("👉 Vector DB API Docs: http://localhost:8001/docs")
     print("\nPress Ctrl+C to stop all servers.")
+    
+    # Wait a few seconds for Next.js to start, then open the browser automatically
+    time.sleep(3)
+    webbrowser.open("http://localhost:3000")
     
     try:
         while True:
